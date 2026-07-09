@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Kenniscentrum | BIM4ALL Academie</title>
+<meta name="description" content="Praktijkkennis over BIM, digitalisering en AI in de bouw.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Kennisartikel" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 72px 56px; background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;">
+    <a href="Kenniscentrum.dc.html" style="color: #8FA07E; font-weight: 600; font-size: 14px;" style-hover="color: #C9E265;">← Kenniscentrum</a>
+    <div style="display: flex; gap: 10px; align-items: center;">
+      <span style="background: #C9E265; color: #1B2618; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">{{ thema }}</span>
+      <span style="font-size: 14px; font-weight: 600; color: #8FA07E;">{{ leestijd }} leestijd</span>
+    </div>
+    <h1 style="font-family: 'Sora', sans-serif; font-size: 46px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 860px; text-wrap: pretty;">{{ titel }}</h1>
+    <p style="font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 640px;">{{ intro }}</p>
+  </div>
+
+  <!-- Artikel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 88px 56px; display: flex; flex-direction: column; gap: 72px;">
+    <div style="max-width: 780px; margin: 0 auto; width: 100%; display: flex; flex-direction: column; gap: 40px;">
+      <sc-for list="{{ secties }}" as="s" hint-placeholder-count="4">
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <h2 style="font-family: 'Sora', sans-serif; font-size: 28px; line-height: 1.2; font-weight: 800; color: #22301F; margin: 0;">{{ s.kop }}</h2>
+          <sc-for list="{{ s.alineas }}" as="al" hint-placeholder-count="2">
+            <p style="font-size: 17px; line-height: 1.75; color: #3F5741; margin: 0;">{{ al }}</p>
+          </sc-for>
+        </div>
+      </sc-for>
+      <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.1); border-radius: 20px; padding: 28px 32px; display: flex; flex-direction: column; gap: 8px;">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #4A6318;">De kern</span>
+        <p style="font-family: 'Sora', sans-serif; font-size: 19px; line-height: 1.5; font-weight: 600; color: #22301F; margin: 0;">{{ kern }}</p>
+      </div>
+    </div>
+
+    <!-- Meer artikelen -->
+    <div data-reveal style="display: flex; flex-direction: column; gap: 24px;">
+      <h2 style="font-family: 'Sora', sans-serif; font-size: 28px; font-weight: 800; color: #22301F; margin: 0; text-align: center;">Lees ook</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <sc-for list="{{ meer }}" as="m" hint-placeholder-count="3">
+          <a href="{{ m.href }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px; color: inherit;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+            <span style="background: #E8F0C8; color: #4A6318; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 5px 12px; border-radius: 999px; align-self: flex-start;">{{ m.thema }}</span>
+            <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F; line-height: 1.3;">{{ m.titel }}</span>
+            <span style="color: #5A7A2E; font-weight: 700; font-size: 15px; margin-top: auto;">Lees artikel <span data-arrow="r">→</span></span>
+          </a>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 34px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">{{ ctaKop }}</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">We denken vrijblijvend mee over de volgende stap voor jouw organisatie.</p>
+      </div>
+      <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  data = {
+    'bim-basis': { thema: 'BIM', leestijd: '5 min', titel: 'BIM-basis: waar begin je als organisatie?', intro: 'De eerste stappen naar modelgericht werken, zonder je team te overvragen.', ctaKop: 'Weten waar jouw organisatie staat met BIM?', kern: 'Begin niet bij software, maar bij een heldere koers: weet waarom je BIM wilt, maak afspraken en neem je mensen mee. Klein beginnen en borgen wint van groot aankondigen.', secties: [
+      { kop: 'Begin bij het waarom, niet bij de software', alineas: ['Veel organisaties starten met BIM door een licentie aan te schaffen en een modelleur aan te nemen. Begrijpelijk — maar daarmee sla je de belangrijkste stap over: waarom wil je modelgericht werken? Minder faalkosten, betere afstemming met partners, of omdat opdrachtgevers erom vragen? Het antwoord bepaalt je route.', 'Formuleer met directie en werkvloer samen twee of drie concrete doelen. Die worden je toetssteen voor elke volgende keuze: van software tot werkafspraken.'] },
+      { kop: 'Breng de startsituatie eerlijk in kaart', alineas: ['Hoe wordt er nu getekend en uitgewisseld? Waar zit kennis — in processen of in hoofden? Een korte nulmeting maakt zichtbaar waar de grootste kansen liggen en voorkomt dat je investeert in de verkeerde dingen.', 'Kijk daarbij verder dan het tekenwerk: ook werkvoorbereiding, calculatie en uitvoering hebben baat bij betere informatie. Juist daar wordt de winst van BIM zichtbaar.'] },
+      { kop: 'Klein beginnen, groot borgen', alineas: ['Kies één project als proeftuin. Maak basisafspraken over modelopbouw en naamgeving (de BIM Basis ILS is een prima start), evalueer wekelijks en stel bij. Zo bouw je ervaring op zonder de hele organisatie te belasten.', 'Borg wat werkt direct in templates, bibliotheken en werkafspraken. En vergeet de mensen niet: een korte training op het juiste moment doet meer dan een dik handboek.'] },
+    ] },
+    'ai-toepassingen': { thema: 'AI', leestijd: '4 min', titel: 'Vijf AI-toepassingen die vandaag al werken in de bouw', intro: 'Van offertes tot modelchecks: praktische voorbeelden uit onze trajecten.', ctaKop: 'Benieuwd wat AI in jouw processen kan doen?', kern: 'AI hoeft niet groot en abstract te zijn: de meeste winst zit in kleine, concrete toepassingen op repeterend werk — vandaag al inzetbaar.', secties: [
+      { kop: '1. Offertes en uitvragen samenvatten', alineas: ['Bestekken en uitvragen van tientallen pagina\u2019s? AI vat ze samen, licht risico\u2019s uit en zet eisen in een overzicht. De calculator beoordeelt, de AI doet het leeswerk.'] },
+      { kop: '2. Vergaderverslagen en overdrachten', alineas: ['Bouwvergaderingen en overdrachten tussen disciplines gaan sneller wanneer AI het verslag en de actielijst voorbereidt. Het team hoeft alleen te controleren en aan te vullen.'] },
+      { kop: '3. Kennis vindbaar maken', alineas: ['Een chatassistent getraind op je eigen protocollen, details en projectdocumentatie beantwoordt vragen die anders bij die ene ervaren collega terechtkomen. Kennis wordt van de organisatie in plaats van van personen.'] },
+      { kop: '4. Modelchecks en datakwaliteit', alineas: ['AI-ondersteunde controles signaleren afwijkingen in modellen en projectdata eerder dan de menselijke steekproef. Geen vervanging van de coördinator — wel een extra paar ogen dat nooit moe wordt.'] },
+      { kop: '5. Rapportages uit ruwe data', alineas: ['Van urenstaten tot voortgangsdata: AI zet ruwe gegevens om in leesbare rapportages voor projectleiding en directie. Sturen op feiten wordt zo een gewoonte in plaats van een klus.'] },
+    ] },
+    'blended-leren': { thema: 'Leren', leestijd: '6 min', titel: 'Waarom blended leren beter beklijft', intro: 'Online voorbereiden, klassikaal verdiepen: zo leert een bouwteam het snelst.', ctaKop: 'Benieuwd hoe een blended traject eruitziet voor jouw team?', kern: 'Kennis beklijft door herhaling en toepassing. Blended leren spreidt het leren over weken, koppelt het aan echte projecten en maakt voortgang meetbaar.', secties: [
+      { kop: 'Het probleem met de losse trainingsdag', alineas: ['Iedereen kent het: een inspirerende trainingsdag, een map met sheets — en drie weken later is tachtig procent weggezakt. Niet omdat de training slecht was, maar omdat het brein herhaling en toepassing nodig heeft om kennis vast te houden.', 'Voor bouwteams komt daar de praktijk bij: een dag van de bouwplaats of het kantoor af is duur. Die kostbare tijd wil je besteden aan wat alleen sámen kan.'] },
+      { kop: 'Zo werkt de blend', alineas: ['Online modules brengen iedereen vooraf op hetzelfde basisniveau — in eigen tempo, waar het uitkomt. De klassikale dag gaat vervolgens niet over theorie, maar over oefenen met eigen projecten en modellen, vragen stellen en van elkaar leren.', 'Daarna borgt de praktijkfase het geleerde: opdrachten in het echte werk, feedback van trainers en een afsluitende toets met certificaat. Voortgang blijft inzichtelijk voor deelnemer én werkgever.'] },
+      { kop: 'Wat het oplevert', alineas: ['Organisaties die blended werken zien hogere leerwinst, meer betrokkenheid en minder werkuitval: de klassikale tijd wordt korter en gerichter. En omdat eigen casussen centraal staan, is geleerd meteen toegepast.', 'Bovendien sluit de aanpak aan op verschillende generaties: de één leert het liefst klassikaal, de ander online in korte momenten. De blend bedient beiden.'] },
+    ] },
+    'bim-coordinator': { thema: 'BIM', leestijd: '7 min', titel: 'De BIM-coördinator als spin in het web', intro: 'Welke skills maken een coördinator succesvol — en hoe ontwikkel je ze?', ctaKop: 'Coördinatoren opleiden in jouw organisatie?', kern: 'Een goede BIM-coördinator combineert technische beheersing met de soft skills van een verbinder. Wie alleen op techniek selecteert en ontwikkelt, mist de helft van de functie.', secties: [
+      { kop: 'Meer dan clash detection', alineas: ['De BIM-coördinator koppelt gebouwmodellen, bewaakt afspraken en signaleert clashes — dat is de zichtbare kant. De onzichtbare kant is minstens zo belangrijk: disciplines bij elkaar brengen, partners aanspreken op afspraken en de kwaliteit bewaken zonder de sfeer te verpesten.', 'In de praktijk zien we dat trajecten zelden stranden op techniek, en vaak op communicatie. Daarom trainen wij coördinatoren op beide.'] },
+      { kop: 'De technische basis', alineas: ['Beheersing van coördinatietools (Solibri, BIMcollab), begrip van uitwisselingsformaten als IFC en kennis van standaarden zoals de BIM Basis ILS en NEN-EN-ISO 19650 vormen het fundament. Zonder die basis geen gezag in het overleg.'] },
+      { kop: 'De verbindende vaardigheden', alineas: ['Overtuigen, feedback geven, escaleren op het juiste moment: het goede gesprek is een vak. Coördinatoren die dat beheersen, krijgen werkafspraken wél nageleefd — ook bij partners buiten de eigen organisatie.', 'Ontwikkel die vaardigheden zoals je technische skills ontwikkelt: met training, oefening in de praktijk en feedback. Een groeiroute van modelleur naar coördinator naar manager geeft talent bovendien perspectief.'] },
+    ] },
+    'ai-verantwoord': { thema: 'AI', leestijd: '5 min', titel: 'Verantwoord starten met AI: privacy en datakwaliteit', intro: 'Waar moet je op letten voordat je team met AI-tools aan de slag gaat?', ctaKop: 'Hulp nodig bij veilige AI-afspraken?', kern: 'Verbieden werkt niet, vrijgeven zonder kaders ook niet. Maak afspraken over wat wel en niet in AI-tools mag, kies veilige omgevingen en train je mensen in AI-geletterdheid.', secties: [
+      { kop: 'Je team gebruikt al AI — de vraag is hoe', alineas: ['Uit vrijwel elke scan die wij doen blijkt: medewerkers gebruiken al AI-tools, vaak privé-accounts, zonder afspraken. Dat is geen onwil maar enthousiasme. Het risico zit in wat er ongemerkt gedeeld wordt: klantgegevens, contracten, calculaties.', 'De eerste stap is dus geen technologie, maar beleid: wat mag wel, wat mag niet, en welke tools zijn goedgekeurd?'] },
+      { kop: 'Kies een veilige omgeving', alineas: ['Zakelijke AI-omgevingen (of een eigen afgeschermde GPT op jullie data) zorgen dat bedrijfsinformatie niet in trainingsdata van derden belandt. Grip op privacy en intellectueel eigendom begint bij die keuze.', 'Let daarnaast op datakwaliteit: AI die op rommelige of verouderde documenten werkt, geeft rommelige antwoorden. Informatiestructuur en AI-succes gaan hand in hand.'] },
+      { kop: 'Train AI-geletterdheid', alineas: ['De EU AI Act vraagt van organisaties dat medewerkers AI-geletterd zijn. Belangrijker nog: geletterde medewerkers halen méér uit AI en maken minder fouten. Een dag training in hoe AI werkt, wat het niet kan en hoe je output controleert, betaalt zich direct terug.'] },
+    ] },
+    'slim-subsidie': { thema: 'Leren', leestijd: '3 min', titel: 'SLIM-subsidie: zo maak je leren betaalbaar', intro: 'Tot 80% van advies- en ontwikkeluren vergoed. Zo werkt de aanvraag.', ctaKop: 'Wij helpen kosteloos met je SLIM-aanvraag', kern: 'De SLIM-subsidie vergoedt een groot deel van de kosten voor leren en ontwikkelen in het mkb — mits je aanvraag aan de voorwaarden voldoet. Wij helpen met de aanvraag én de uitvoering.', secties: [
+      { kop: 'Wat is de SLIM-subsidie?', alineas: ['De Stimuleringsregeling Leren en ontwikkelen In Mkb-ondernemingen (SLIM) is bedoeld om leren in het mkb structureel te maken. Denk aan het opstellen van een opleidingsplan, loopbaanadviezen of het inrichten van een bedrijfsschool of academie.', 'De regeling vergoedt tot 80% van de subsidiabele kosten, met een maximum van €25.000 per organisatie — voor grotere mkb-bedrijven gelden andere percentages.'] },
+      { kop: 'Wat valt eronder?', alineas: ['Precies de dingen waarmee wij organisaties helpen: een leerstrategie en opleidingsplan opstellen, leertrajecten en een leeromgeving (LMS) inrichten, en leren koppelen aan de dagelijkse praktijk. Losse vakinhoudelijke trainingen vallen er meestal niet onder — de structuur eromheen wél.'] },
+      { kop: 'Zo pak je het aan', alineas: ['De aanvraagperiodes zijn beperkt en het budget is gemaximeerd, dus voorbereiding loont. Wij helpen je bepalen of je traject in aanmerking komt, schrijven mee aan de aanvraag en zorgen dat de uitvoering en verantwoording kloppen.'] },
+    ] },
+  };
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, parseInt(el.getAttribute('data-reveal-delay') || '0', 10));
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() {
+    const slug = new URLSearchParams(window.location.search).get('a') || 'bim-basis';
+    const key = this.data[slug] ? slug : 'bim-basis';
+    const a = this.data[key];
+    document.title = a.titel + ' | BIM4ALL Academie';
+    const sleutels = Object.keys(this.data);
+    const idx = sleutels.indexOf(key);
+    const meer = [1, 2, 3].map((n) => {
+      const s = sleutels[(idx + n) % sleutels.length];
+      return { href: 'Artikel.dc.html?a=' + s, titel: this.data[s].titel, thema: this.data[s].thema };
+    });
+    return { ...a, meer };
+  }
+}
+</script>
+</body>
+</html>

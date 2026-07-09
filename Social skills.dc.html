@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Social skills | BIM4ALL Academie</title>
+<meta name="description" content="Niet de techniek maakt het verschil, maar de mensen. Social skills-trainingen voor de bouwpraktijk.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Social skills" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Social skills</span>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Techniek werkt pas als <span style="color: #C9E265;">mensen samenwerken</span></h1>
+      <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">Communiceren, samenwerken, overtuigen en leidinggeven: soft skills bepalen het succes van elk bouwproject. Wij trainen ze net zo praktijkgericht als BIM.</p>
+      <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; align-items: center; gap: 14px;">
+        <a href="Contact.dc.html" style="background: #C9E265; color: #1B2618; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="background: #D8EE7E;">Bekijk de trainingen</a>
+        <a href="Contact.dc.html" style="border: 1px solid rgba(244,244,236,0.35); color: #F4F4EC; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="border-color: #C9E265; color: #C9E265;">Plan een kennismaking</a>
+      </div>
+    </div>
+    <div style="animation: fadeUp 0.8s ease 0.35s both; height: 420px;">
+      <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="social-hero" src="assets/sfeer-meetingroom.jpeg" shape="rounded" radius="24" placeholder="Sleep hier een trainingsfoto" hint-size="100%,100%"></x-import>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 88px;">
+
+    <!-- Trainingen -->
+    <div style="display: flex; flex-direction: column; gap: 48px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Trainingen</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Soft skills voor de bouwpraktijk</h2>
+        <p style="font-size: 18px; line-height: 1.55; color: #55604C; margin: 0;">Voor BIM-coördinatoren die moeten overtuigen, projectleiders die teams meenemen en professionals die willen groeien.</p>
+      </div>
+      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">01</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">Communiceren &amp; overtuigen</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Draagvlak creëren voor nieuwe werkwijzen, helder presenteren en effectief overleggen — op de bouwplaats en in de directiekamer.</p>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">02</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">Samenwerken in (BIM-)teams</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Beter afstemmen tussen disciplines, feedback geven en ontvangen, en conflicten productief maken.</p>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">03</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">Leidinggeven aan verandering</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Voor leidinggevenden die digitalisering trekken: mensen meenemen, weerstand ombuigen en resultaat borgen.</p>
+        </div>
+        <div style="background: radial-gradient(ellipse 360px 260px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 14px;">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #C9E265; color: #22301F; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">04</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #F4F4EC; margin: 0;">Persoonlijke effectiviteit</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #B9C4AC; margin: 0;">Timemanagement, prioriteiten stellen en grip houden in drukke projecten. Klein leren, groot effect.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statement -->
+    <div data-reveal style="background: radial-gradient(ellipse 900px 480px at 50% 100%, rgba(166,201,52,0.30), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), #1B2618; border-radius: 28px; padding: 80px 56px; display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;">
+      <span style="border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px;">Wat wij elke keer terughoren</span>
+      <h2 style="font-family: 'Sora', sans-serif; font-size: 56px; line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 900px; text-wrap: pretty;">Niet de techniek maakt het verschil, maar <span style="color: #C9E265;">de mensen</span></h2>
+      <p style="font-size: 18px; line-height: 1.6; color: #AAB69B; margin: 0; max-width: 640px;">Social skills zijn vaak het onderdeel dat organisaties er vooraf uit willen halen — het komt dichtbij. Achteraf horen we steevast hetzelfde: dít was het meest waardevolle deel van het traject.</p>
+    </div>
+
+    <!-- Waarom social skills -->
+    <div data-reveal style="display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Waarom social skills</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">De echte uitdaging zit zelden in de techniek</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #55604C; margin: 0;">Organisaties investeren volop in BIM, digitalisering en AI — maar verandering vraagt om draagvlak, duidelijke communicatie en samenwerking. Worden teams onvoldoende meegenomen, dan ontstaat weerstand: processen vertragen, fouten nemen toe en innovaties leveren minder op dan verwacht.</p>
+      </div>
+      <div style="background: #3F5741; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 16px;">
+        <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 20px; color: #F4F4EC;">Wat sterke social skills opleveren</span>
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #E8EEDC;"><span style="color: #C9E265;">✓</span>Minder faalkosten door duidelijke communicatie</span>
+          <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #E8EEDC;"><span style="color: #C9E265;">✓</span>Meer draagvlak voor digitale verandering</span>
+          <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #E8EEDC;"><span style="color: #C9E265;">✓</span>Sneller eigenaarschap binnen projecten</span>
+          <span style="display: inline-flex; align-items: center; gap: 10px; font-size: 15px; font-weight: 600; color: #E8EEDC;"><span style="color: #C9E265;">✓</span>Meer betrokkenheid en sterker leiderschap</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aanbod -->
+    <div style="display: flex; flex-direction: column; gap: 36px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 760px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Ons aanbod</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Praktijkgerichte trainingen en workshops</h2>
+        <p style="font-size: 17px; line-height: 1.55; color: #55604C; margin: 0;">Beschikbaar als klassikale training, incompany traject of blended leerprogramma.</p>
+      </div>
+      <div data-reveal data-reveal-delay="100" style="display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; max-width: 1000px; margin: 0 auto;">
+        <a href="Klassikaal leren.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px;" style-hover="border-color: #3F5741;">Jij als professional</a>
+        <a href="Klassikaal leren.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px;" style-hover="border-color: #3F5741;">Het Goede Gesprek &amp; Professionele Communicatie</a>
+        <a href="Klassikaal leren.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px;" style-hover="border-color: #3F5741;">Werken in teams en projectgroepen</a>
+        <a href="Klassikaal leren.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px;" style-hover="border-color: #3F5741;">Omgaan met verandering</a>
+        <a href="Klassikaal leren.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px;" style-hover="border-color: #3F5741;">De 4-ledige verantwoordelijkheid &amp; eigenaarschap</a>
+        <a href="Klassikaal leren.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px;" style-hover="border-color: #3F5741;">Situationeel en coachend leiderschap</a>
+        <a href="Klassikaal leren.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px;" style-hover="border-color: #3F5741;">Talent optimaal benutten</a>
+        <a href="Klassikaal leren.dc.html" style="background: #22301F; color: #C9E265; font-size: 15px; font-weight: 700; padding: 12px 22px; border-radius: 999px;">Serious Game: De Kracht van een Goede Start</a>
+      </div>
+      <div data-reveal style="display: flex; justify-content: center;">
+        <a href="Leeraanbod.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px;" style-hover="color: #3F5741;">Bekijk het volledige leeraanbod <span data-arrow="r">→</span></a>
+      </div>
+    </div>
+
+    <!-- Voor wie -->
+    <div data-reveal style="display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 56px; align-items: center;">
+      <div style="height: 400px;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="social-voorwie" src="assets/foto-adviesgesprek.jpeg" shape="rounded" radius="24" placeholder="Foto gesprek" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Voor wie</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Iedere rol vraagt om andere vaardigheden</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #55604C; margin: 0;">Van directie en HR tot projectleiders, BIM-coördinatoren, werkvoorbereiders en modelleurs. Een projectleider heeft behoefte aan leiderschap in multidisciplinaire teams; HR zoekt manieren om talentontwikkeling structureel te borgen. Daarom stemmen we inhoud, niveau en werkvorm af op de rol én de dagelijkse praktijk.</p>
+        <p style="font-size: 17px; line-height: 1.6; color: #55604C; margin: 0;">Gedrag verander je niet met een losse training: onze blended aanpak combineert klassikaal, online, praktijkopdrachten en begeleiding — en sluit aan op hoe verschillende generaties leren.</p>
+        <a href="Blended leren.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px;" style-hover="color: #3F5741;">Zo werkt onze blended aanpak <span data-arrow="r">→</span></a>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Investeren in mensen is investeren in de toekomst</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Organisaties die alleen in techniek investeren, missen het belangrijkste deel van duurzame verandering. We maken social skills structureel onderdeel van jouw strategie, opleidingsplan en dagelijkse praktijk.</p>
+      </div>
+      <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, d);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

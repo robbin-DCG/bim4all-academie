@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Klantverhaal Hoppenbrouwers | BIM4ALL Academie</title>
+<meta name="description" content="Talentontwikkeling structureel georganiseerd: van 2D naar BIM als basis.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Klantverhaal Hoppenbrouwers" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 70% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 22px;">
+      <a href="Klantverhalen.dc.html" style="animation: fadeUp 0.7s ease 0.02s both; color: #8FA07E; font-weight: 600; font-size: 14px;" style-hover="color: #C9E265;">← Alle klantverhalen</a>
+      <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Klantverhaal · Hoppenbrouwers Techniek</span>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 50px; line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Talentontwikkeling <span style="color: #C9E265;">structureel</span> georganiseerd</h1>
+      <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">Van 2D-tekenen naar volledig 3D BIM-modelleren: een BIM-analyse, een veranderplan en begeleiding bij implementatie en training binnen de hele organisatie.</p>
+      <div style="animation: fadeUp 0.7s ease 0.32s both; border-left: 3px solid #C9E265; padding: 4px 0 4px 20px;">
+        <p style="font-family: 'Sora', sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #E8EEDC; margin: 0; font-style: italic;">“BIM zorgt voor efficiëntere samenwerkingen met onze opdrachtgevers en bouwpartners tijdens de ontwerpfase, de bouwfase, en zelfs in de beheerfase.”</p>
+        <span style="font-size: 14px; font-weight: 600; color: #8FA07E;">Joris van de Braak · BIM-manager, Hoppenbrouwers Techniek</span>
+      </div>
+    </div>
+    <div style="animation: fadeUp 0.8s ease 0.35s both; display: flex; flex-direction: column; gap: 16px;">
+      <div style="height: 360px;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="hoppenbrouwers-hero" shape="rounded" radius="24" placeholder="Sleep hier een foto van Hoppenbrouwers Techniek" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="background: #F4F4EC; border-radius: 16px; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+        <img src="assets/logo-hoppenbrouwers-kleur.png" alt="Hoppenbrouwers Techniek" style="height: 36px; object-fit: contain;">
+        <span style="font-size: 14px; font-weight: 600; color: #55604C; text-align: right;">Technisch dienstverlener · volledig overgestapt op 3D BIM-modelleren</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 88px 56px; display: flex; flex-direction: column; gap: 96px;">
+
+    <!-- Uitdaging -->
+    <div data-reveal style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; max-width: 1180px; margin: 0 auto; width: 100%;">
+      <div style="display: flex; flex-direction: column; gap: 18px; position: sticky; top: 100px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">De startsituatie</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Van jarenlang 2D-tekenen naar BIM als basis</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">2D-tekenen was jarenlang de norm. Ruim een jaar geleden koos Hoppenbrouwers ervoor volledig over te stappen naar 3D BIM-modelleren — met het juiste uitgangspunt: BIM is meer dan alleen 3D-modelleren.</p>
+        <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">Om verandering door te voeren moet duidelijk zijn wie er mee moeten, wat hun huidige BIM-niveau is en wat het ultieme resultaat moet zijn. Alleen dan voegt de verandering waarde toe.</p>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.1); border-radius: 16px; padding: 22px 26px;">
+          <p style="font-family: 'Sora', sans-serif; font-size: 17px; line-height: 1.5; font-weight: 600; color: #22301F; margin: 0; font-style: italic;">“Door de juiste uitwisseling van informatie ontstaat een gestructureerde dataverzameling van een gebouw, die optimaal gebruikt kan worden om fouten voor of tijdens de bouw op te lossen.”</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aanpak -->
+    <div style="display: flex; flex-direction: column; gap: 40px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 760px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Onze aanpak</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Strategisch, met een praktische instelling</h2>
+      </div>
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 1</span><span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Strategische sessie & maturity-analyse</span><p style="font-size: 14px; line-height: 1.6; color: #55604C; margin: 0;">De organisatie in kaart gebracht: wie moet mee in de verandering, wat is het huidige BIM-niveau en wat is het beoogde resultaat?</p></div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 2</span><span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Veranderplan met tussenfases</span><p style="font-size: 14px; line-height: 1.6; color: #55604C; margin: 0;">Op basis van de analyse een veranderplan opgesteld met concrete stappen — ruim 24 maanden uitgetrokken om de werkmethodiek te implementeren.</p></div>
+        <div style="background: radial-gradient(ellipse 300px 200px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #C9E265;">STAP 3</span><span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #F4F4EC;">Opleiden & verankeren</span><p style="font-size: 14px; line-height: 1.6; color: #B9C4AC; margin: 0;">Medewerkers getraind en opgeleid tot BIM-modelleur en -coördinator. De werkmethodiek vond zo haar weg binnen de hele organisatie.</p></div>
+      </div>
+    </div>
+
+    <!-- Resultaat -->
+    <div data-reveal style="background: radial-gradient(ellipse 640px 420px at 88% 0%, rgba(201,226,101,0.28), transparent 62%), repeating-linear-gradient(0deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), #3F5741; border-radius: 28px; padding: 56px; display: flex; flex-direction: column; gap: 36px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Resultaat</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">BIM als basis voor álle projecten</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #C9D4BC; margin: 0;">Hoppenbrouwers ziet de \u2018M\u2019 in BIM inmiddels ook als Bouw Informatie Management: organisatiebreed digitaal grip op informatie en manufacturing. Ze ontwerpen, voeren uit en beheren in BIM.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+        <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Beter klantgesprek</span><p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">3D-modellen bieden inzicht in gesprekken met de klant; foutmeldingen worden sneller geconstateerd.</p></div>
+        <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Eigen visie</span><p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">BIM is geen onderdeel van het proces meer, maar de basis voor projecten — van ontwerp tot beheer.</p></div>
+        <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Missie</span><p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">De meerwaarde van BIM laten zien in projecten en zo de bouw overtuigen: betere samenwerking, efficiënter bouwproces, gemak op de bouwplaats.</p></div>
+      </div>
+      
+    </div>
+
+    <!-- Grote quote -->
+    <div data-reveal style="display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 56px; align-items: center; max-width: 1180px; margin: 0 auto; width: 100%;">
+      <div style="height: 440px;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="hoppenbrouwers-portret" shape="rounded" radius="24" placeholder="Sleep hier een foto van Joris van de Braak of het team" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Het fundament</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 34px; line-height: 1.2; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">“BIM zorgt voor efficiëntere samenwerkingen met onze opdrachtgevers en bouwpartners — in ontwerp, bouw én beheer.”</h2>
+        <span style="font-size: 15px; font-weight: 600; color: #8B937E;">Joris van de Braak · BIM-manager, Hoppenbrouwers Techniek</span>
+        <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">Door te starten met een maturity-analyse en een praktisch veranderplan is een stevige basis gelegd. Medewerkers zijn actief betrokken en opgeleid, waardoor BIM stevig verankerd is in de werkwijze — niet als doel op zich, maar als middel om slimmer samen te werken, fouten te voorkomen en informatie centraal te borgen.</p>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Benieuwd wat wij voor jouw organisatie kunnen betekenen?</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Onze consultants vertalen strategische vraagstukken naar praktische oplossingen — voor processen, mensen en projecten.</p>
+      </div>
+      <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, d);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

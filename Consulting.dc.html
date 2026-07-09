@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Consulting | BIM4ALL Academie</title>
+<meta name="description" content="Strategisch advies, BIM-bedrijfsscans en begeleiding bij digitalisering — van ambitie naar aantoonbaar resultaat.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Consulting" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Consulting</span>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Van visie naar <span style="color: #C9E265;">werkende praktijk</span></h1>
+      <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">Wij helpen bouwbedrijven bij digitale strategievorming en structurele verbetering. Zo ontstaat overzicht, grip en voortgang — voor directie én werkvloer.</p>
+      <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; align-items: center; gap: 14px;">
+        <a href="Contact.dc.html" style="background: #C9E265; color: #1B2618; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="background: #D8EE7E;">Plan een kennismaking</a>
+        <a href="Klantverhalen.dc.html" style="border: 1px solid rgba(244,244,236,0.35); color: #F4F4EC; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="border-color: #C9E265; color: #C9E265;">Bekijk klantverhalen</a>
+      </div>
+    </div>
+    <div style="animation: fadeUp 0.8s ease 0.35s both; height: 420px;">
+      <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="consulting-hero" src="assets/foto-consulting.jpeg" shape="rounded" radius="24" placeholder="Sleep hier een adviesfoto" hint-size="100%,100%"></x-import>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 88px;">
+
+    <!-- Diensten -->
+    <div style="display: flex; flex-direction: column; gap: 48px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Wat we oplossen</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Herken je deze vraagstukken?</h2>
+        <p style="font-size: 18px; line-height: 1.55; color: #55604C; margin: 0;">Geen dikke rapporten die in een la verdwijnen, maar advies dat morgen werkt op de bouwplaats en op kantoor.</p>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+          <span style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px;">BIM-bedrijfsscans</span>
+          <span style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px;">Strategisch advies</span>
+          <span style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px;">Implementatie &amp; begeleiding</span>
+          <span style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.2); color: #3F5741; font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px;">Onafhankelijk advies</span>
+        </div>
+      </div>
+      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">01</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">“Waar staan we en waar moeten we heen?”</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Met een BIM-bedrijfsscan en strategisch advies bepalen we samen een haalbare koers met heldere prioriteiten — van BIM level 1 tot 3.</p>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">02</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">“Hoe krijgen we processen die werken?”</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Slimme procesinrichting, (open) standaarden zoals NEN-EN-ISO 19650, softwarekeuze en systeemintegraties — begeleid tot in de projecten.</p>
+        </div>
+        <div style="background: radial-gradient(ellipse 360px 260px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px;">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #C9E265; color: #22301F; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">03</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #F4F4EC; margin: 0;">“Hoe krijgen we iedereen mee?”</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #B9C4AC; margin: 0;">Digitalisering slaagt alleen als mensen meebewegen. Wij koppelen advies aan opleiding, coaching en draagvlak.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Aanpak -->
+    <div data-reveal style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Onze aanpak</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">De BIM4ALL-aanpak: van ambitie naar aantoonbaar resultaat</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #55604C; margin: 0;">Elk traject volgt dezelfde bewezen stappen — van kennismaken en verkennen, via strategie en plan van aanpak, naar uitvoering en borging. In het tempo dat past bij jouw organisatie.</p>
+        <div style="border-left: 3px solid #A6C934; padding: 4px 0 4px 20px;">
+          <p style="font-family: 'Sora', sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #22301F; margin: 0; font-style: italic;">“Hun gestructureerde aanpak en de flexibiliteit om aan te sluiten bij onze organisatie maken het verschil.”</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 16px; padding: 22px 26px; display: flex; gap: 20px; align-items: center;">
+          <span style="width: 44px; height: 44px; border-radius: 14px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; font-family: 'Sora', sans-serif; flex: 0 0 auto;">01</span>
+          <div><div style="font-weight: 700; font-size: 17px; color: #22301F;">Nulmeting &amp; ambitie</div><div style="font-size: 15px; color: #55604C; line-height: 1.5;">Scan van je huidige werkwijze, systemen en kennis. Heldere foto van vandaag.</div></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 16px; padding: 22px 26px; display: flex; gap: 20px; align-items: center;">
+          <span style="width: 44px; height: 44px; border-radius: 14px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; font-family: 'Sora', sans-serif; flex: 0 0 auto;">02</span>
+          <div><div style="font-weight: 700; font-size: 17px; color: #22301F;">Routekaart</div><div style="font-size: 15px; color: #55604C; line-height: 1.5;">Concreet stappenplan met prioriteiten, rollen en meetbare doelen.</div></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 16px; padding: 22px 26px; display: flex; gap: 20px; align-items: center;">
+          <span style="width: 44px; height: 44px; border-radius: 14px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; font-family: 'Sora', sans-serif; flex: 0 0 auto;">03</span>
+          <div><div style="font-weight: 700; font-size: 17px; color: #22301F;">Uitvoering &amp; begeleiding</div><div style="font-size: 15px; color: #55604C; line-height: 1.5;">Wij werken mee in de praktijk en trainen je mensen waar nodig.</div></div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 16px; padding: 22px 26px; display: flex; gap: 20px; align-items: center;">
+          <span style="width: 44px; height: 44px; border-radius: 14px; background: #C9E265; color: #22301F; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; font-family: 'Sora', sans-serif; flex: 0 0 auto;">04</span>
+          <div><div style="font-weight: 700; font-size: 17px; color: #22301F;">Borgen &amp; doorontwikkelen</div><div style="font-size: 15px; color: #55604C; line-height: 1.5;">Resultaten vastleggen in de organisatie en periodiek bijsturen.</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mensgericht digitaliseren -->
+    <div data-reveal style="display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 56px; align-items: center;">
+      <div style="height: 420px;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="consulting-mensgericht" src="assets/foto-adviesgesprek.jpeg" shape="rounded" radius="24" placeholder="Foto adviesgesprek" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Mensgericht digitaliseren</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Digitalisering vraagt meer dan een sterk BIM-team</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #55604C; margin: 0;">Ook werkvoorbereiding, projectleiding, inkoop en uitvoering spelen een cruciale rol. Medewerkers die begrijpen hoe informatiemodellen werken, werken effectiever samen, beperken risico's en voorkomen vertraging. Met gerichte leerlijnen vergroten we de BIM-volwassenheid van de hele organisatie.</p>
+        <a href="Leeraanbod.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px;" style-hover="color: #3F5741;">Bekijk de leerlijnen <span data-arrow="r">→</span></a>
+      </div>
+    </div>
+
+    <!-- Uitgelichte thema's -->
+    <div data-reveal style="background: radial-gradient(ellipse 640px 420px at 88% 0%, rgba(201,226,101,0.28), transparent 62%), repeating-linear-gradient(0deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), #3F5741; border-radius: 28px; padding: 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Uitgelichte thema's</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0;">Van strategisch fundament tot slimme processen</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #C9D4BC; margin: 0;">Elke organisatie is anders — daarom vraagt digitalisering om maatwerk. Onze consultants brengen structuur, maken het concreet en begeleiden stap voor stap.</p>
+        <a href="Contact.dc.html" style="background: #C9E265; color: #22301F; padding: 13px 26px; border-radius: 999px; font-weight: 700; font-size: 16px; align-self: flex-start;" style-hover="background: #D8EE7E;">Bespreek jouw vraagstuk</a>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 10px; align-content: center;">
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">BIM LEVEL 1, 2, 3</span>
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">AI &amp; DATAGEDREVEN BESLUITVORMING</span>
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">NEN-EN-ISO 19650</span>
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">SLIMME PROCESINRICHTING</span>
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">(OPEN) STANDAARDEN</span>
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">KOPPELINGEN &amp; SYSTEEMINTEGRATIES</span>
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">BIM ALS STRATEGISCH FUNDAMENT</span>
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">DUURZAAMHEID &amp; CIRCULARITEIT</span>
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 14px; font-weight: 700; padding: 8px 18px; border-radius: 999px;">TALENTONTWIKKELING</span>
+      </div>
+    </div>
+
+    <!-- Zelfscan -->
+    <div data-reveal style="background: #FFFFFF; border: 1px dashed rgba(63,87,65,0.35); border-radius: 20px; padding: 28px 36px; display: flex; align-items: center; gap: 28px;">
+      <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; flex: 0 0 auto;">Gratis zelfscan</span>
+      <p style="font-size: 16px; line-height: 1.55; color: #55604C; margin: 0; flex: 1;">Benieuwd waar jouw organisatie staat met AI, BIM of digitale vaardigheid? In twee minuten zie je waar de grootste kansen liggen — met direct een eerste inzicht.</p>
+      <a href="Zelfscan.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px; white-space: nowrap;">Start de zelfscan <span data-arrow="r">→</span></a>
+    </div>
+
+    <!-- CTA band -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Benieuwd waar jouw organisatie staat?</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Plan een vrijblijvende kennismaking. Binnen één gesprek weet je waar de grootste kansen liggen.</p>
+      </div>
+      <div style="display: flex; align-items: center; gap: 24px; flex: 0 0 auto;">
+        <div style="background: rgba(244,244,236,0.08); border: 1px solid rgba(201,226,101,0.25); border-radius: 18px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+          <img src="assets/team-herwin.png" alt="Consultant" style="width: 56px; height: 56px; border-radius: 14px; object-fit: cover; object-position: top; display: block;">
+          <div style="display: flex; flex-direction: column; gap: 2px;">
+            <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px; color: #F4F4EC;">Herwin Voortman</span>
+            <span style="font-size: 13px; color: #B9C4AC;">CTO — denkt graag met je mee</span>
+          </div>
+        </div>
+        <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap;" style-hover="background: #B02377;">Plan een kennismaking</a>
+      </div>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, d);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

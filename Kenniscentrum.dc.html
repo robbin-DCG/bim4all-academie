@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Kenniscentrum | BIM4ALL Academie</title>
+<meta name="description" content="Artikelen, gidsen en praktijkkennis over BIM, digitalisering en AI in de bouw. Gratis en zonder jargon.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Kenniscentrum" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 72px 56px; background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 24px; align-items: center; text-align: center;">
+    <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6);">Kenniscentrum</span>
+    <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 860px; text-wrap: pretty;">Kennis om <span style="color: #C9E265;">direct mee verder</span> te kunnen</h1>
+    <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 620px;">Artikelen, gidsen en praktijkkennis over BIM, digitalisering en AI in de bouw. Gratis, nuchter en zonder jargon.</p>
+    <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+      <sc-for list="{{ themas }}" as="t" hint-placeholder-count="4">
+        <span onClick="{{ t.kies }}" style="background: {{ t.bg }}; color: {{ t.kleur }}; border: 1px solid rgba(201,226,101,0.35); font-size: 13px; font-weight: 700; padding: 8px 18px; border-radius: 999px; cursor: pointer;">{{ t.naam }}</span>
+      </sc-for>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 64px;">
+
+    <!-- Artikelen -->
+    <div data-reveal style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+      <sc-for list="{{ artikelen }}" as="a" hint-placeholder-count="6">
+        <a href="{{ a.href }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 14px; cursor: pointer; color: inherit;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <div style="display: flex; align-items: center; gap: 10px;">
+            <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px;">{{ a.thema }}</span>
+            <span style="font-size: 13px; color: #8B937E; font-weight: 600;">{{ a.leestijd }}</span>
+          </div>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 21px; line-height: 1.3; font-weight: 700; color: #22301F; margin: 0;">{{ a.titel }}</h3>
+          <p style="font-size: 15px; line-height: 1.55; color: #55604C; margin: 0;">{{ a.intro }}</p>
+          <span style="color: #5A7A2E; font-weight: 700; font-size: 15px; margin-top: auto;">Lees artikel <span data-arrow="r">→</span></span>
+        </a>
+      </sc-for>
+    </div>
+
+    <!-- Nieuwsbrief CTA -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 560px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Nieuwe kennis direct in je inbox</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Meld je aan voor de nieuwsbrief en mis geen artikel.</p>
+      </div>
+      <div style="display: flex; gap: 10px; flex: 0 0 auto;">
+        <span style="background: rgba(0,0,0,0.3); border: 1px solid rgba(201,226,101,0.22); border-radius: 999px; padding: 13px 24px; color: #8B937E; font-size: 15px; min-width: 220px;">E-mail *</span>
+        <span style="background: #C9E265; color: #1B2618; padding: 13px 26px; border-radius: 999px; font-weight: 700; font-size: 15px; cursor: pointer;" style-hover="background: #D8EE7E;">Aanmelden</span>
+      </div>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { thema: 'Alles' };
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, parseInt(el.getAttribute('data-reveal-delay') || '0', 10));
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() {
+    const alle = [
+      { thema: 'BIM', leestijd: '5 min', slug: 'bim-basis', titel: 'BIM-basis: waar begin je als organisatie?', intro: 'De eerste stappen naar modelgericht werken, zonder je team te overvragen.' },
+      { thema: 'AI', leestijd: '4 min', slug: 'ai-toepassingen', titel: 'Vijf AI-toepassingen die vandaag al werken in de bouw', intro: 'Van offertes tot modelchecks: praktische voorbeelden uit onze trajecten.' },
+      { thema: 'Leren', leestijd: '6 min', slug: 'blended-leren', titel: 'Waarom blended leren beter beklijft', intro: 'Online voorbereiden, klassikaal verdiepen: zo leert een bouwteam het snelst.' },
+      { thema: 'BIM', leestijd: '7 min', slug: 'bim-coordinator', titel: 'De BIM-coördinator als spin in het web', intro: 'Welke skills maken een coördinator succesvol — en hoe ontwikkel je ze?' },
+      { thema: 'AI', leestijd: '5 min', slug: 'ai-verantwoord', titel: 'Verantwoord starten met AI: privacy en datakwaliteit', intro: 'Waar moet je op letten voordat je team met AI-tools aan de slag gaat?' },
+      { thema: 'Leren', leestijd: '3 min', slug: 'slim-subsidie', titel: 'SLIM-subsidie: zo maak je leren betaalbaar', intro: 'Tot 80% van advies- en ontwikkeluren vergoed. Zo werkt de aanvraag.' },
+    ];
+    const t = this.state.thema;
+    const artikelen = t === 'Alles' ? alle : alle.filter((a) => a.thema === t);
+    const themas = ['Alles', 'BIM', 'AI', 'Leren'].map((naam) => ({
+      naam,
+      bg: naam === t ? '#C9E265' : 'rgba(27,38,24,0.6)',
+      kleur: naam === t ? '#1B2618' : '#C9E265',
+      kies: () => this.setState({ thema: naam }),
+    }));
+    return { artikelen: artikelen.map((a) => ({ ...a, href: a.slug ? 'Artikel.dc.html?a=' + a.slug : 'Kenniscentrum.dc.html' })), themas };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Klantverhalen | BIM4ALL Academie</title>
+<meta name="description" content="Ontdek hoe bouwbedrijven hun BIM-strategie implementeren en direct resultaat behalen — 115 klanten, 9.1 tevredenheid.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Klantverhalen" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 72px 56px; background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 24px; align-items: center; text-align: center;">
+    <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6);">Klantverhalen</span>
+    <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 860px; text-wrap: pretty;">Zo helpen wij organisaties <span style="color: #C9E265;">vooruit</span></h1>
+    <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 620px;">Ontdek hoe bouwbedrijven hun BIM-strategie implementeren, medewerkers ontwikkelen en direct resultaat behalen in projecten.</p>
+    <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; gap: 56px; margin-top: 8px;">
+      <div style="display: flex; flex-direction: column; gap: 2px; align-items: center;"><span style="font-family: 'Sora', sans-serif; font-size: 40px; font-weight: 800; color: #C9E265;">115</span><span style="font-size: 14px; font-weight: 600; color: #AAB69B;">Tevreden klanten</span></div>
+      <div style="display: flex; flex-direction: column; gap: 2px; align-items: center;"><span style="font-family: 'Sora', sans-serif; font-size: 40px; font-weight: 800; color: #C9E265;">9.1</span><span style="font-size: 14px; font-weight: 600; color: #AAB69B;">Tevredenheidscijfer</span></div>
+      <div style="display: flex; flex-direction: column; gap: 2px; align-items: center;"><span style="font-family: 'Sora', sans-serif; font-size: 40px; font-weight: 800; color: #C9E265;">750+</span><span style="font-size: 14px; font-weight: 600; color: #AAB69B;">Certificaten uitgereikt</span></div>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 64px;">
+
+    <!-- Verhalen grid -->
+    <div data-reveal style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+      <sc-for list="{{ verhalen }}" as="v" hint-placeholder-count="6">
+        <a href="{{ v.href }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 24px; overflow: hidden; display: flex; flex-direction: column; cursor: pointer; color: inherit;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <div style="height: 200px; background: #E8EEDC; display: flex; align-items: center; justify-content: center; padding: 24px;">
+            <img src="{{ v.logo }}" alt="{{ v.bedrijf }}" style="max-height: 64px; max-width: 220px; object-fit: contain;">
+          </div>
+          <div style="padding: 28px 28px 32px 28px; display: flex; flex-direction: column; gap: 12px; flex: 1;">
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #8B937E;">{{ v.thema }}</span>
+            <h3 style="font-family: 'Sora', sans-serif; font-size: 21px; line-height: 1.25; font-weight: 700; color: #22301F; margin: 0;">{{ v.titel }}</h3>
+            <p style="font-size: 15px; line-height: 1.55; color: #55604C; margin: 0;">{{ v.samenvatting }}</p>
+            <span style="color: #5A7A2E; font-weight: 700; font-size: 15px; margin-top: auto;">Lees het verhaal <span data-arrow="r">→</span></span>
+          </div>
+        </a>
+      </sc-for>
+    </div>
+
+    <!-- Uitgelicht: Hollander Techniek -->
+    <div data-reveal style="background: radial-gradient(ellipse 640px 420px at 88% 0%, rgba(201,226,101,0.28), transparent 62%), repeating-linear-gradient(0deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), #3F5741; border-radius: 28px; padding: 56px; display: flex; flex-direction: column; gap: 36px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Uitgelicht klantverhaal · Hollander Techniek</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Van kennisverschillen naar één digitale werkwijze</h2>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+        <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">De uitdaging</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">Grote verschillen in BIM-kennis en -ervaring leidden tot miscommunicatie en inefficiëntie. BIM moest structureel verankerd worden binnen het Cluster Retail.</p>
+        </div>
+        <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">De aanpak</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">Maatwerk op verschillende niveaus: strategisch advies, trainingen, inspiratiesessies en werkgroepen — stapsgewijs en met draagvlak, in de taal van techniek én organisatie.</p>
+        </div>
+        <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Het resultaat</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">Kennis direct toegepast in lopende projecten, meer betrokkenheid en betere samenwerking. De drempel om met BIM te werken is verlaagd — de transitie versnelt.</p>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Sora', sans-serif; font-size: 34px; font-weight: 800; color: #C9E265;">40+</span><span style="font-size: 14px; font-weight: 600; color: #C9D4BC;">medewerkers getraind binnen Cluster Retail</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Sora', sans-serif; font-size: 34px; font-weight: 800; color: #C9E265;">3</span><span style="font-size: 14px; font-weight: 600; color: #C9D4BC;">maatwerktrajecten: strategie, training en werkgroepen</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Sora', sans-serif; font-size: 34px; font-weight: 800; color: #C9E265;">1</span><span style="font-size: 14px; font-weight: 600; color: #C9D4BC;">gezamenlijke BIM-werkwijze, direct toegepast in projecten</span></div>
+      </div>
+      <div style="border-left: 3px solid #C9E265; padding: 4px 0 4px 24px; display: flex; flex-direction: column; gap: 8px;">
+        <p style="font-family: 'Sora', sans-serif; font-size: 22px; line-height: 1.45; font-weight: 600; color: #F4F4EC; margin: 0; font-style: italic; max-width: 860px;">“We spreken elkaar. We dagen elkaar uit en jullie helpen de behoefte die wij bij onze organisatie hebben te vertalen naar concrete acties voor implementaties.”</p>
+        <span style="font-size: 15px; font-weight: 600; color: #C9D4BC;">Mark Schuijer · Consultant Business Development, Hollander Techniek</span>
+      </div>
+    </div>
+
+    <!-- Quote -->
+    <div data-reveal style="display: flex; flex-direction: column; gap: 16px; align-items: center; text-align: center; padding: 8px 0;">
+      <p style="font-family: 'Sora', sans-serif; font-size: 24px; line-height: 1.45; font-weight: 600; color: #22301F; margin: 0; max-width: 780px; font-style: italic;">“Brede specialistische kennis die jullie in huis hebben, kunnen jullie heel gericht inzetten als dat nodig is. Heel prettig voor organisaties die nog weinig ervaring hebben met werken in BIM.”</p>
+      <span style="font-size: 15px; font-weight: 600; color: #8B937E;">Hollander Techniek</span>
+    </div>
+
+    <!-- CTA -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Wordt jouw organisatie het volgende verhaal?</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Plan een kennismaking en ontdek wat er mogelijk is.</p>
+      </div>
+      <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, d);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() {
+    const data = [
+        { bedrijf: 'Brummelhuis', logo: 'assets/logo-brummelhuis.png', thema: 'Digitalisering', titel: 'Hoe Brummelhuis werkt aan een betere aansluiting op klanten met BIM', samenvatting: 'Van het herkennen van de noodzaak van digitalisering tot concrete stappen in proces en werkwijze.', link: 'Klantverhaal Brummelhuis.dc.html' },
+        { bedrijf: 'ROC van Twente', logo: 'assets/logo-roc-kleur.png', thema: 'Facility management & digital twin', titel: 'Een duidelijk doel voor ogen, met een goed stappenplan ernaast', samenvatting: 'Gebouwbeheer verbeteren met digitale technologie — gestart vanuit de eisen en wensen van de belangrijkste gebruikers.', link: 'Klantverhaal ROC van Twente.dc.html' },
+        { bedrijf: 'Hollander Techniek', logo: 'assets/logo-hollander-kleur.png', thema: 'Consulting & leertraject', titel: 'Brede specialistische kennis, heel gericht ingezet', samenvatting: 'Kennisverschillen in BIM overbruggen met maatwerktrainingen, inspiratiesessies en werkgroepen — direct toegepast in lopende projecten.', link: 'Klantverhaal Hollander Techniek.dc.html' },
+        { bedrijf: 'Vastbouw', logo: 'assets/logo-vastbouw.png', thema: 'Samenwerking & implementatie', titel: 'Gestructureerde aanpak die aansluit bij de organisatie', samenvatting: 'Een samenwerking die zich kenmerkt door structuur én de flexibiliteit om aan te sluiten bij hoe Vastbouw werkt.', link: 'Klantverhaal Vastbouw.dc.html' },
+        { bedrijf: 'Hoppenbrouwers Techniek', logo: 'assets/logo-hoppenbrouwers-kleur.png', thema: 'BIM in projecten', titel: 'Efficiëntere samenwerking in ontwerp, bouw én beheer', samenvatting: 'BIM zorgt voor efficiëntere samenwerking met opdrachtgevers en bouwpartners — tijdens de ontwerpfase, de bouwfase en zelfs de beheerfase.', link: 'Klantverhaal Hoppenbrouwers.dc.html' },
+        { bedrijf: 'Jouw organisatie', logo: 'logo.png', thema: 'Jouw verhaal', titel: 'Hier kan jouw verhaal staan', samenvatting: 'Benieuwd wat een traject met de BIM4ALL Academie jouw organisatie oplevert? Plan een kennismaking.', link: 'Contact.dc.html' },
+      ];
+    return {
+      verhalen: data.map((v) => ({ ...v, href: v.link || 'Klantverhalen.dc.html' })),
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Klantverhaal ROC van Twente | BIM4ALL Academie</title>
+<meta name="description" content="Digital Twin als fundament: grip op vastgoed met betrouwbare data.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Klantverhaal ROC van Twente" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 70% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 22px;">
+      <a href="Klantverhalen.dc.html" style="animation: fadeUp 0.7s ease 0.02s both; color: #8FA07E; font-weight: 600; font-size: 14px;" style-hover="color: #C9E265;">← Alle klantverhalen</a>
+      <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Klantverhaal · ROC van Twente</span>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 54px; line-height: 1.06; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Digital Twin als <span style="color: #C9E265;">fundament</span></h1>
+      <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">ROC van Twente wil meer grip op haar vastgoed en sturen op betrouwbare cijfers. Samen brengen we structuur aan in informatie en processen — de basis voor Lifecycle Management.</p>
+      <div style="animation: fadeUp 0.7s ease 0.32s both; border-left: 3px solid #C9E265; padding: 4px 0 4px 20px;">
+        <p style="font-family: 'Sora', sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #E8EEDC; margin: 0; font-style: italic;">“Digitalisering is een ontzettend prettig hulpmiddel om te sturen op cijfers, met onderbouwing vanuit feiten.”</p>
+        <span style="font-size: 14px; font-weight: 600; color: #8FA07E;">Wendy Steggink · Beleidsadviseur Vastgoed &amp; Huisvesting</span>
+      </div>
+    </div>
+    <div style="animation: fadeUp 0.8s ease 0.35s both; display: flex; flex-direction: column; gap: 16px;">
+      <div style="height: 360px;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="roc-hero" src="assets/roc-hal.jpeg" shape="rounded" radius="24" placeholder="Foto ROC van Twente" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="background: #F4F4EC; border-radius: 16px; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+        <img src="assets/logo-roc-kleur.png" alt="ROC van Twente" style="height: 36px; object-fit: contain;">
+        <span style="font-size: 14px; font-weight: 600; color: #55604C; text-align: right;">±18.500 studenten · ±300 opleidingen · meerdere locaties</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 88px 56px; display: flex; flex-direction: column; gap: 96px;">
+
+    <!-- Uitdaging -->
+    <div data-reveal style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; max-width: 1180px; margin: 0 auto; width: 100%;">
+      <div style="display: flex; flex-direction: column; gap: 18px; position: sticky; top: 100px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">De uitdaging</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Zes archieven, zes versies van de waarheid</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">Met een omvangrijke vastgoedportefeuille vraagt ROC van Twente om professioneel, toekomstgericht vastgoedbeheer. Maar informatie versnipperde: medewerkers wilden snel tekeningen vinden en bouwden persoonlijke archieven op — waardoor er op centraal niveau niets geborgd was.</p>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.1); border-radius: 16px; padding: 22px 26px;">
+          <p style="font-family: 'Sora', sans-serif; font-size: 17px; line-height: 1.5; font-weight: 600; color: #22301F; margin: 0; font-style: italic;">“Dan krijg je vier, vijf, zes plekken waar tekeningen staan die allemaal een vorm van waarheid kennen, maar die mismatchen als je ze naast elkaar legt.”</p>
+        </div>
+        <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">Voor mutatieprocessen en beheer een duidelijk risico: zonder eenduidige versie is onzeker wat actueel en betrouwbaar is. Er ging bovendien veel geld om in vastgoed — sturen op feiten werd de ambitie, met een nieuw expertisecentrum van circa 15 professionals als basis.</p>
+      </div>
+    </div>
+
+    <!-- Aanpak -->
+    <div style="display: flex; flex-direction: column; gap: 40px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 760px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Onze aanpak</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Stap voor stap naar één bron van waarheid</h2>
+      </div>
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 1</span>
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Van 2D naar 3D</span>
+          <p style="font-size: 14px; line-height: 1.6; color: #55604C; margin: 0;">2D-tekeningen vertaald naar 3D-modellen van de eigen panden — de eerste laag van de Digital Twin. De meerwaarde werd direct zichtbaar in contractmanagement.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 2</span>
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Structuur als fundament</span>
+          <p style="font-size: 14px; line-height: 1.6; color: #55604C; margin: 0;">NL-SfB-codering, standaard naamgeving, duidelijke locatiecodes en versiebeheer. En één harde regel: lege mappen zijn een no-go.</p>
+        </div>
+        <div style="background: radial-gradient(ellipse 300px 200px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #C9E265;">STAP 3</span>
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #F4F4EC;">ACC als centrale omgeving</span>
+          <p style="font-size: 14px; line-height: 1.6; color: #B9C4AC; margin: 0;">Van BIM 360 naar Autodesk Construction Cloud: modellen, documenten en mutaties beheerst opgeslagen, wijzigingen herleidbaar, historie geborgd.</p>
+        </div>
+      </div>
+      <div data-reveal style="background: #FFFFFF; border: 1px dashed rgba(63,87,65,0.35); border-radius: 20px; padding: 24px 32px; display: flex; align-items: center; gap: 24px; max-width: 940px; margin: 0 auto; width: 100%;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; flex: 0 0 auto;">Regie bij ROC</span>
+        <p style="font-size: 15px; line-height: 1.55; color: #55604C; margin: 0; font-style: italic;">“Daar waar we het zelf kunnen invullen, is het heel fijn dat we dat zelf mogen doen. En daar waar wij de expertise of capaciteit missen, kunnen we een beroep op jullie doen.”</p>
+      </div>
+    </div>
+
+    <!-- Resultaat -->
+    <div data-reveal style="background: radial-gradient(ellipse 640px 420px at 88% 0%, rgba(201,226,101,0.28), transparent 62%), repeating-linear-gradient(0deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), #3F5741; border-radius: 28px; padding: 56px; display: flex; flex-direction: column; gap: 36px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
+        <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Resultaat</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Een Digital Twin die uitgroeit tot strategisch stuurinstrument</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #C9D4BC; margin: 0;">Mutaties worden niet langer ad hoc aangepast, maar gestructureerd doorgevoerd en geborgd in één centrale omgeving — met inzichtelijke historie. Dat ondersteunt contractmanagement, mutatiesturing, investeringsbeslissingen en langetermijnonderhoud.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Sora', sans-serif; font-size: 34px; font-weight: 800; color: #C9E265;">&gt;90%</span><span style="font-size: 14px; font-weight: 600; color: #C9D4BC;">betrouwbaarheid van de data — en stijgend</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Sora', sans-serif; font-size: 34px; font-weight: 800; color: #C9E265;">1</span><span style="font-size: 14px; font-weight: 600; color: #C9D4BC;">centrale bron van waarheid in ACC</span></div>
+        <div style="display: flex; flex-direction: column; gap: 2px;"><span style="font-family: 'Sora', sans-serif; font-size: 34px; font-weight: 800; color: #C9E265;">15</span><span style="font-size: 14px; font-weight: 600; color: #C9D4BC;">professionals in het eigen expertisecentrum</span></div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch;">
+        <div style="height: 280px;">
+          <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="roc-overleg" src="assets/roc-overleg.jpeg" shape="rounded" radius="16" placeholder="Foto" hint-size="100%,100%"></x-import>
+        </div>
+        <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 28px 30px; display: flex; flex-direction: column; gap: 12px; justify-content: center;">
+          <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Langdurige samenwerking</span>
+          <p style="font-size: 16px; line-height: 1.6; color: #E8EEDC; margin: 0;">Geen eenmalig project, maar een ontwikkeltraject. Door medewerkers vroegtijdig te positioneren ontstaat draagvlak en blijft kennis binnen de organisatie geborgd.</p>
+          <p style="font-size: 16px; line-height: 1.6; color: #E8EEDC; margin: 0; font-style: italic;">“Als opdrachtgever blijf je in controle. Dat is prettig.”</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Advies + portret -->
+    <div data-reveal style="display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 56px; align-items: center; max-width: 1180px; margin: 0 auto; width: 100%;">
+      <div style="height: 480px;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="roc-portret" src="assets/roc-wendy.jpeg" shape="rounded" radius="24" placeholder="Portret Wendy Steggink" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Advies aan andere organisaties</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.15; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">“Houd een duidelijk doel voor ogen, met een goed stappenplan ernaast.”</h2>
+        <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">Wanneer stappen vanaf het begin goed worden geborgd en in de juiste volgorde worden doorlopen, vergroot dat de kans op duurzaam succes.</p>
+        <div style="border-left: 3px solid #A6C934; padding: 4px 0 4px 20px; display: flex; flex-direction: column; gap: 6px;">
+          <p style="font-family: 'Sora', sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #22301F; margin: 0; font-style: italic;">“Het plan van aanpak ziet er duidelijk uit. Daarmee kunnen we goed zien wat er van ons wordt verwacht en wat de BIM4ALL Academie ons kan bieden.”</p>
+          <span style="font-size: 14px; font-weight: 600; color: #8B937E;">Wendy Steggink · Beleidsadviseur Vastgoed &amp; Huisvesting, ROC van Twente</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Ook grip op jouw vastgoed of projecten?</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Van documentstructuur tot Digital Twin — we brengen er stap voor stap structuur in aan.</p>
+      </div>
+      <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, d);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

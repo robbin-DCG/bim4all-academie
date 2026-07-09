@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Gratis quickscan | BIM4ALL Academie</title>
+<meta name="description" content="Waar staat jouw organisatie met AI, BIM of digitale vaardigheid? Doe de quickscan in 2 minuten.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Zelfscan" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 56px 56px; background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.22), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;">
+    <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6);">Gratis zelfscan · 2 minuten</span>
+    <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 56px; line-height: 1.06; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 820px; text-wrap: pretty;">Waar staat jouw organisatie <span style="color: #C9E265;">vandaag</span>?</h1>
+    <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 18px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 560px;">Beantwoord vijf stellingen en zie direct waar je staat — en wat een logische volgende stap is.</p>
+  </div>
+
+  <!-- Scan -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 56px; display: flex; flex-direction: column; gap: 32px;">
+
+    <!-- Domeinkeuze -->
+    <div style="display: flex; flex-direction: column; gap: 14px; align-items: center;">
+      <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8B937E;">Kies je onderwerp</span>
+      <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+        <sc-for list="{{ domeinen }}" as="d" hint-placeholder-count="3">
+          <span onClick="{{ d.kies }}" style="background: {{ d.bg }}; color: {{ d.kleur }}; border: 1px solid rgba(63,87,65,0.25); font-size: 15px; font-weight: 700; padding: 11px 24px; border-radius: 999px; cursor: pointer;">{{ d.naam }}</span>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- Stellingen -->
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 960px; width: 100%; margin: 0 auto;">
+      <sc-for list="{{ vragen }}" as="v" hint-placeholder-count="5">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.10); border-radius: 16px; padding: 20px 26px; display: flex; align-items: center; gap: 24px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 15px; color: #A6C934; flex: 0 0 auto;">{{ v.nr }}</span>
+          <span style="font-size: 16px; font-weight: 600; color: #22301F; flex: 1; line-height: 1.45;">{{ v.tekst }}</span>
+          <div style="display: flex; gap: 8px; flex: 0 0 auto;">
+            <sc-for list="{{ v.opties }}" as="o" hint-placeholder-count="3">
+              <span onClick="{{ o.kies }}" style="background: {{ o.bg }}; color: {{ o.kleur }}; border: 1px solid rgba(63,87,65,0.25); font-size: 13px; font-weight: 700; padding: 8px 18px; border-radius: 999px; cursor: pointer; white-space: nowrap;">{{ o.label }}</span>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <!-- Resultaat -->
+    <sc-if value="{{ klaar }}" hint-placeholder-val="{{ false }}">
+      <div style="max-width: 960px; width: 100%; margin: 0 auto; background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 24px; padding: 44px 48px; display: flex; align-items: center; gap: 48px;">
+        <div style="display: flex; flex-direction: column; gap: 12px; flex: 1;">
+          <span style="background: #C9E265; color: #22301F; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Jouw resultaat · {{ score }}/10</span>
+          <h2 style="font-family: 'Sora', sans-serif; font-size: 32px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0;">{{ profielNaam }}</h2>
+          <p style="font-size: 16px; line-height: 1.6; color: #B9C4AC; margin: 0;">{{ profielAdvies }}</p>
+          <div style="border-left: 3px solid #C9E265; background: rgba(201,226,101,0.08); border-radius: 0 12px 12px 0; padding: 14px 18px; display: flex; flex-direction: column; gap: 6px; margin-top: 4px;">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;"><span style="display: inline-block; animation: aiPulse 2s ease infinite;">✦</span>Eerste inzicht op basis van jouw antwoorden</span>
+            <span style="font-size: 15px; line-height: 1.55; color: #E8EEDC; font-weight: 500;">{{ aiTekst }}</span>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 12px; flex: 0 0 auto;">
+          <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; text-align: center; white-space: nowrap;" style-hover="background: #B02377;">Bespreek je resultaat</a>
+          <span style="font-size: 13px; color: #8FA07E; text-align: center;">Vrijblijvend · binnen één werkdag reactie</span>
+        </div>
+      </div>
+    </sc-if>
+    <sc-if value="{{ nietKlaar }}" hint-placeholder-val="{{ true }}">
+      <div style="max-width: 960px; width: 100%; margin: 0 auto; text-align: center; font-size: 15px; font-weight: 600; color: #8B937E;">{{ voortgang }}</div>
+    </sc-if>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { domein: 'AI', antwoorden: {}, aiTekst: '', aiKey: '' };
+  async haalAiInzicht(domein, antw, vragen) {
+    const key = domein + ':' + JSON.stringify(antw);
+    if (this.state.aiKey === key) return;
+    this.setState({ aiKey: key, aiTekst: '' });
+    const regels = vragen.map((tekst, i) => '- ' + tekst + ': ' + ['nog niet', 'deels', 'ja'][antw[i]]).join('\n');
+    try {
+      const tekst = await window.claude.complete({
+        system: 'Je schrijft voor de BIM4ALL Academie (leren & ontwikkelen, consulting en AI voor de bouwsector). Toon: Nederlands, je/jouw, toegankelijk, zelfverzekerd. Schrijf op basis van scan-antwoorden precies 2 zinnen: zin 1 benoemt scherp het meest urgente risico of de grootste gemiste kans die uit de antwoorden blijkt (concreet, niet generiek); zin 2 geeft aan dat dit sneller op te lossen is dan men denkt en stuurt aan op een gesprek. Geen opsomming, geen volledig advies, geen aanhef, maximaal 45 woorden totaal.',
+        messages: [{ role: 'user', content: 'Onderwerp: ' + domein + '\nAntwoorden:\n' + regels }],
+      });
+      if (this.state.aiKey === key) this.setState({ aiTekst: tekst.trim() });
+    } catch (e) {
+      if (this.state.aiKey === key) this.setState({ aiTekst: 'Jouw antwoorden laten duidelijke kansen zien — de eerste stap is kleiner dan je denkt. Bespreek je resultaat en ontdek wat er binnen drie maanden al kan.' });
+    }
+  }
+  vragenPer = {
+    'AI': [
+      'We weten waar AI kansen biedt in onze processen',
+      'Onze medewerkers hebben basiskennis van AI (AI-geletterdheid)',
+      'Er zijn afspraken over veilig en verantwoord AI-gebruik',
+      'We gebruiken AI-tools structureel in projecten',
+      'Onze data is toegankelijk en van goede kwaliteit',
+    ],
+    'BIM': [
+      'We hebben een heldere BIM-strategie met prioriteiten',
+      'Modelleurs en werkvoorbereiders werken volgens dezelfde afspraken',
+      'BIM-rollen en verantwoordelijkheden zijn belegd',
+      'We passen BIM aantoonbaar toe in projecten',
+      'Kennis wordt geborgd en is niet persoonsafhankelijk',
+    ],
+    'Digitale vaardigheid': [
+      'Medewerkers kunnen goed overweg met onze digitale tools',
+      'Er is een leercultuur: leren hoort bij het werk',
+      'Nieuwe medewerkers zijn snel ingewerkt op onze systemen',
+      'Digitale werkafspraken worden in de praktijk nageleefd',
+      'We hebben zicht op de digitale vaardigheid van ons team',
+    ],
+  };
+  renderVals() {
+    const domein = this.state.domein;
+    const antw = this.state.antwoorden[domein] || {};
+    const optieLabels = [['Nog niet', 0], ['Deels', 1], ['Ja', 2]];
+    const vragen = this.vragenPer[domein].map((tekst, i) => ({
+      nr: '0' + (i + 1),
+      tekst,
+      opties: optieLabels.map(([label, punten]) => {
+        const gekozen = antw[i] === punten;
+        return {
+          label,
+          bg: gekozen ? '#22301F' : '#F4F4EC',
+          kleur: gekozen ? '#C9E265' : '#55604C',
+          kies: () => this.setState((s) => ({
+            antwoorden: { ...s.antwoorden, [domein]: { ...(s.antwoorden[domein] || {}), [i]: punten } },
+          })),
+        };
+      }),
+    }));
+    const beantwoord = Object.keys(antw).length;
+    const klaar = beantwoord === 5;
+    if (klaar) this.haalAiInzicht(domein, antw, this.vragenPer[domein]);
+    const score = Object.values(antw).reduce((a, b) => a + b, 0);
+    let profielNaam, profielAdvies;
+    if (score <= 3) {
+      profielNaam = 'Starter — de basis ligt open';
+      profielAdvies = 'Er is veel te winnen. Begin met richting: een heldere strategie en basiskennis bij je mensen. Wij helpen je in één kennismaking de eerste logische stap te bepalen.';
+    } else if (score <= 7) {
+      profielNaam = 'Groeier — de fundering staat';
+      profielAdvies = 'Je bent op weg, maar samenhang tussen strategie, processen en mensen kan sterker. Een gericht traject maakt de volgende stap concreet en meetbaar.';
+    } else {
+      profielNaam = 'Koploper — klaar voor verdieping';
+      profielAdvies = 'Sterke basis! De winst zit nu in verdieping en borging: opschalen, kennis vasthouden en voorop blijven lopen. Sparren over wat er nog meer kan?';
+    }
+    return {
+      domeinen: ['AI', 'BIM', 'Digitale vaardigheid'].map((naam) => ({
+        naam,
+        bg: naam === domein ? '#22301F' : '#FFFFFF',
+        kleur: naam === domein ? '#C9E265' : '#3F5741',
+        kies: () => this.setState({ domein: naam }),
+      })),
+      vragen,
+      klaar,
+      nietKlaar: !klaar,
+      voortgang: beantwoord === 0 ? 'Beantwoord de vijf stellingen en zie direct je resultaat.' : beantwoord + ' van 5 beantwoord — nog ' + (5 - beantwoord) + ' te gaan.',
+      score,
+      profielNaam,
+      profielAdvies,
+      aiTekst: this.state.aiTekst || 'Jouw antwoorden worden gelezen…',
+    };
+  }
+}
+</script>
+</body>
+</html>

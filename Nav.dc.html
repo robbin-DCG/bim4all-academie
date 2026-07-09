@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<header style="display: flex; align-items: center; justify-content: space-between; padding: 18px 48px; gap: 24px; background: #1B2618; border-bottom: 1px solid rgba(201,226,101,0.14); position: relative; transition: background 0.3s ease, box-shadow 0.3s ease;">
+  <a href="BIM4ALL Homepage v2.dc.html" style="display: block;"><img src="logo.png" alt="BIM4ALL Academie" style="height: 38px; display: block;"></a>
+  <nav style="display: flex; align-items: center; gap: 20px; font-size: 15px; font-weight: 600; color: #D5DEC6; white-space: nowrap; flex-wrap: nowrap;">
+    <a href="Consulting.dc.html" style="color: #D5DEC6; cursor: pointer;" style-hover="color: #C9E265;">Consulting</a>
+    <span style="position: relative;">
+      <span onClick="{{ toggleLo }}" style="cursor: pointer; color: #D5DEC6;" style-hover="color: #C9E265;">Leeraanbod ⌄</span>
+      <sc-if value="{{ loOpen }}" hint-placeholder-val="{{ false }}">
+        <div style="position: absolute; top: 34px; left: 0; background: #22301F; border: 1px solid rgba(201,226,101,0.25); border-radius: 16px; padding: 8px; display: flex; flex-direction: column; gap: 2px; min-width: 230px; box-shadow: 0 12px 32px rgba(0,0,0,0.4); z-index: 100;">
+          <a href="Leeraanbod.dc.html" style="color: #C9E265; padding: 11px 14px; border-radius: 10px; font-weight: 700; font-size: 15px; white-space: nowrap; display: block; border-bottom: 1px solid rgba(201,226,101,0.18); border-radius: 10px 10px 0 0;" style-hover="background: rgba(201,226,101,0.12);">Overzicht leeraanbod <span data-arrow="r">→</span></a>
+          <a href="Klassikaal leren.dc.html" style="color: #D5DEC6; padding: 11px 14px; border-radius: 10px; font-weight: 600; font-size: 15px; white-space: nowrap; display: block;" style-hover="background: rgba(201,226,101,0.12); color: #C9E265;">Klassikaal leren</a>
+          <a href="Online leren.dc.html" style="color: #D5DEC6; padding: 11px 14px; border-radius: 10px; font-weight: 600; font-size: 15px; white-space: nowrap; display: block;" style-hover="background: rgba(201,226,101,0.12); color: #C9E265;">Online leren</a>
+          <a href="Blended leren.dc.html" style="color: #D5DEC6; padding: 11px 14px; border-radius: 10px; font-weight: 600; font-size: 15px; white-space: nowrap; display: block;" style-hover="background: rgba(201,226,101,0.12); color: #C9E265;">Blended leren</a>
+          <a href="Social skills.dc.html" style="color: #D5DEC6; padding: 11px 14px; border-radius: 10px; font-weight: 600; font-size: 15px; white-space: nowrap; display: block;" style-hover="background: rgba(201,226,101,0.12); color: #C9E265;">Social skills</a>
+        </div>
+      </sc-if>
+    </span>
+    <a href="AI.dc.html" style="display: inline-flex; align-items: center; gap: 6px; color: #D5DEC6; cursor: pointer;" style-hover="color: #C9E265;">AI <span style="display: inline-block; color: #C9E265; font-size: 13px; line-height: 1; animation: aiPulse 2.6s ease-in-out infinite;">✦</span></a>
+    <a href="Klantverhalen.dc.html" style="color: #D5DEC6; cursor: pointer;" style-hover="color: #C9E265;">Klantverhalen</a>
+    <a href="Kenniscentrum.dc.html" style="color: #D5DEC6; cursor: pointer;" style-hover="color: #C9E265;">Kenniscentrum</a>
+    <a href="Over ons.dc.html" style="color: #D5DEC6; cursor: pointer;" style-hover="color: #C9E265;">Over ons</a>
+    <a href="Werken bij.dc.html" style="color: #D5DEC6; cursor: pointer;" style-hover="color: #C9E265;">Werken bij</a>
+    <a href="Zelfscan.dc.html" style="border: 1px solid rgba(201,226,101,0.5); color: #C9E265; padding: 9px 20px; border-radius: 999px; font-weight: 700; cursor: pointer;" style-hover="background: rgba(201,226,101,0.14);">Doe de quickscan</a>
+    <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 10px 22px; border-radius: 999px; font-weight: 700; cursor: pointer;" style-hover="background: #B02377;">Contact</a>
+  </nav>
+</header>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;$preview&quot;: {&quot;width&quot;: 1440, &quot;height&quot;: 76}}">
+class Component extends DCLogic {
+  state = { open: null };
+  componentDidMount() {
+    const header = document.querySelector('header');
+    if (!header) return;
+    const update = () => {
+      const gescrold = window.scrollY > 24;
+      header.style.background = gescrold ? 'rgba(20,29,18,0.92)' : '#1B2618';
+      header.style.backdropFilter = gescrold ? 'blur(10px)' : 'none';
+      header.style.boxShadow = gescrold ? '0 8px 24px rgba(0,0,0,0.35)' : 'none';
+    };
+    window.addEventListener('scroll', update, { passive: true });
+    update();
+  }
+  renderVals() {
+    const t = (naam) => () => this.setState({ open: this.state.open === naam ? null : naam });
+    return {
+      loOpen: this.state.open === 'lo',
+      aiOpen: this.state.open === 'ai',
+      overOpen: this.state.open === 'over',
+      toggleLo: t('lo'),
+      toggleAi: t('ai'),
+      toggleOver: t('over'),
+    };
+  }
+}
+</script>
+</body>
+</html>

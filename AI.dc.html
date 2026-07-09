@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>AI voor de bouw | BIM4ALL Academie</title>
+<meta name="description" content="Binnen vier weken een werkende AI-basis: trainingen, een AI-scan en oplossingen voor de bouwpraktijk.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="AI" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.24), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 24px; align-items: center; text-align: center;">
+    <span style="animation: fadeUp 0.7s ease 0.05s both; background: #C9E265; color: #1B2618; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px;">AI voor de bouw · Bewezen in de praktijk</span>
+    <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 56px; line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 940px; text-wrap: pretty;">Elke bouworganisatie weet dat AI moet.<br>Wij laten zien <span style="color: #C9E265;">hoe</span></h1>
+    <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 620px;">Met een bewezen stappenplan heeft jouw organisatie binnen vier weken een werkende AI-basis die elke dag waarde oplevert — praktisch, veilig en gebouwd op jullie eigen data en processen.</p>
+    <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; align-items: center; gap: 14px;">
+      <a href="Contact.dc.html" style="background: #C9E265; color: #1B2618; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="background: #D8EE7E;">Start met de AI-scan</a>
+      <a href="Contact.dc.html" style="border: 1px solid rgba(244,244,236,0.35); color: #F4F4EC; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="border-color: #C9E265; color: #C9E265;">Bekijk AI-trainingen</a>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 88px;">
+
+    <!-- Drie AI-diensten -->
+    <div style="display: flex; flex-direction: column; gap: 48px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Ons AI-aanbod</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Drie manieren om te starten</h2>
+        <p style="font-size: 18px; line-height: 1.55; color: #55604C; margin: 0;">Of je nu wilt verkennen, weten waar je staat of direct resultaat wilt: er is altijd een logische eerste stap.</p>
+      </div>
+      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10L12 5 2 10l10 5 10-5z"></path><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"></path></svg></span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">AI-trainingen</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Online én klassikaal: van AI-basiskennis tot toepassing in jouw functie. Voor de hele organisatie, van werkvloer tot directie.</p>
+          <a href="Contact.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px; margin-top: auto;">Bekijk trainingen <span data-arrow="r">→</span></a>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg></span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">AI-scan</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Waar staat jouw organisatie? In één traject brengen we kansen, risico's en quick wins in kaart — met een concreet stappenplan.</p>
+          <a href="Contact.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px; margin-top: auto;">Start de scan <span data-arrow="r">→</span></a>
+        </div>
+        <div style="background: radial-gradient(ellipse 360px 260px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px;">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #C9E265; color: #22301F; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6l-2.8 2.8-2.1-2.1z"></path></svg></span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #F4F4EC; margin: 0;">AI-tools</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #B9C4AC; margin: 0;">Slimme tools die direct waarde opleveren in je projecten en processen — geselecteerd en ingericht voor de bouwpraktijk.</p>
+          <a href="Contact.dc.html" style="color: #C9E265; font-weight: 700; font-size: 16px; margin-top: auto;">Ontdek de tools <span data-arrow="r">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- AI-oplossingen die we bouwen -->
+    <div style="display: flex; flex-direction: column; gap: 40px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 780px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">AI-oplossingen</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Wat wij voor de bouw bouwen</h2>
+        <p style="font-size: 18px; line-height: 1.55; color: #55604C; margin: 0;">Van slimme assistent tot volledige automatisering: oplossingen die aansluiten op jullie systemen, projecten en mensen.</p>
+      </div>
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 19px; color: #22301F;">Digitale medewerker</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0;">Een AI-collega die vragen beantwoordt, documenten voorbereidt en repeterend werk overneemt — getraind op jullie kennis en werkwijze.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 19px; color: #22301F;">AI-agents voor documenten</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0;">Bestekken, contracten en protocollen automatisch controleren en samenvatten. Risico's vroeg in beeld, uren bespaard per project.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 19px; color: #22301F;">GPT op maat, veilig op jullie data</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0;">Een eigen, afgeschermde AI-omgeving getraind op jullie projectdata en kennisbank. Grip op privacy, antwoorden uit jullie eigen bron.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 19px; color: #22301F;">Automatisering tussen systemen</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0;">ERP, planning, CRM en BIM-omgevingen die niet met elkaar praten? Wij koppelen en automatiseren — ook zonder standaard API's.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 19px; color: #22301F;">Slimme modelchecks</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0;">AI-ondersteunde controles op BIM-modellen en projectdata: afwijkingen en clashes eerder gesignaleerd, hogere datakwaliteit.</p>
+        </div>
+        <div style="background: radial-gradient(ellipse 320px 220px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 19px; color: #F4F4EC;">Rapportages &amp; dashboards</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #B9C4AC; margin: 0;">Van data naar besluit: dashboards en automatische rapportages die directie en projectleiding elke dag scherp houden.</p>
+          <a href="Contact.dc.html" style="color: #C9E265; font-weight: 700; font-size: 15px; margin-top: auto;">Bespreek de mogelijkheden <span data-arrow="r">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Data & AI-Platform -->
+    <div data-reveal style="background: radial-gradient(ellipse 900px 500px at 85% 0%, rgba(166,201,52,0.20), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; flex-direction: column; gap: 40px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px;">
+        <span style="background: #C9E265; color: #22301F; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Data &amp; AI-Platform</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Eén platform, vijf lagen — van bron tot gebruiker</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Zo zetten wij data en AI in bij organisaties: gekoppeld aan je eigen bronnen, veilig ontsloten en bruikbaar via apps, agents en dashboards. Altijd met de mens in de loop.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 320px; gap: 24px; align-items: start;">
+        <div style="display: flex; flex-direction: column; gap: 10px;">
+          <sc-for list="{{ platformLagen }}" as="pl" hint-placeholder-count="5">
+            <div onClick="{{ pl.toggle }}" style="background: {{ pl.bg }}; border: 1px solid rgba(201,226,101,0.22); border-radius: 16px; padding: 20px 26px; display: flex; flex-direction: column; gap: 14px; cursor: pointer;" style-hover="border-color: rgba(201,226,101,0.5);">
+              <div style="display: flex; align-items: center; gap: 18px;">
+                <span style="width: 40px; height: 40px; border-radius: 12px; background: rgba(201,226,101,0.14); color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-family: 'Sora', sans-serif; font-weight: 700; font-size: 15px; flex: 0 0 auto;">{{ pl.nr }}</span>
+                <div style="display: flex; flex-direction: column; gap: 2px;">
+                  <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #F4F4EC;">{{ pl.naam }}</span>
+                  <span style="font-size: 13px; color: #8FA07E; line-height: 1.4;">{{ pl.sub }}</span>
+                </div>
+                <span style="margin-left: auto; width: 34px; height: 34px; border-radius: 999px; border: 1.5px solid rgba(201,226,101,0.6); color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 19px; font-weight: 700; flex: 0 0 auto; transition: background 0.2s ease;">{{ pl.chevron }}</span>
+              </div>
+              <sc-if value="{{ pl.open }}" hint-placeholder-val="{{ false }}">
+                <div style="display: flex; flex-wrap: wrap; gap: 8px; padding-left: 58px;">
+                  <sc-for list="{{ pl.chips }}" as="chip" hint-placeholder-count="4">
+                    <span style="background: rgba(201,226,101,0.12); color: #D5DEC6; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 999px; white-space: nowrap;">{{ chip }}</span>
+                  </sc-for>
+                </div>
+              </sc-if>
+            </div>
+          </sc-for>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="background: #F4F4EC; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px;">
+            <h3 style="font-family: 'Sora', sans-serif; font-size: 19px; font-weight: 700; color: #22301F; margin: 0;">Human in the loop</h3>
+            <div style="display: flex; flex-direction: column; gap: 9px;">
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Minder losse licenties en platformen</span>
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>(Meer) grip op data</span>
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Flexibel door meerdere LLM's</span>
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Efficiëntie per taak</span>
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Kosten naar gebruik</span>
+            </div>
+          </div>
+          <div style="background: #C9E265; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 14px;">
+            <h3 style="font-family: 'Sora', sans-serif; font-size: 19px; font-weight: 700; color: #22301F; margin: 0;">Toekomstbestendig platform</h3>
+            <div style="display: flex; flex-direction: column; gap: 9px;">
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #33401E;"><span style="color: #3F5741;">✓</span>Modulair en schaalbaar</span>
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #33401E;"><span style="color: #3F5741;">✓</span>Plug &amp; play nieuwe bronnen, modellen en apps</span>
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #33401E;"><span style="color: #3F5741;">✓</span>Continue verbetering en governance</span>
+              <span style="display: inline-flex; align-items: baseline; gap: 8px; font-size: 14px; font-weight: 600; color: #33401E;"><span style="color: #3F5741;">✓</span>Transparant, veilig en compliant</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Onderzoek / urgentie -->
+    <div data-reveal style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+      <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 32px 34px; display: flex; flex-direction: column; gap: 10px;">
+        <span style="font-family: 'Sora', sans-serif; font-size: 40px; font-weight: 800; color: #7BA218; line-height: 1;">50%</span>
+        <p style="font-size: 16px; line-height: 1.6; color: #3F5741; margin: 0; font-weight: 600;">snellere omzetgroei voor bedrijven die AI diep integreren in hun organisatie.</p>
+        <span style="font-size: 13px; color: #8B937E;">Bron: Accenture, The Art of AI Maturity</span>
+      </div>
+      <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 32px 34px; display: flex; flex-direction: column; gap: 10px;">
+        <span style="font-family: 'Sora', sans-serif; font-size: 40px; font-weight: 800; color: #7BA218; line-height: 1;">60%</span>
+        <p style="font-size: 16px; line-height: 1.6; color: #3F5741; margin: 0; font-weight: 600;">groeide de kloof tussen digitale koplopers en achterblijvers in slechts drie jaar. Wie nu niet versnelt, verliest steeds sneller terrein.</p>
+        <span style="font-size: 13px; color: #8B937E;">Bron: McKinsey Digital</span>
+      </div>
+    </div>
+
+    <!-- Stappenplan -->
+    <div style="display: flex; flex-direction: column; gap: 36px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Zo pakken we het aan</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Stap voor stap naar werkende AI</h2>
+      </div>
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px;">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 1</span>
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Scan &amp; kansenkaart</span>
+          <p style="font-size: 14px; line-height: 1.55; color: #55604C; margin: 0;">We brengen processen en data in kaart en laten zien waar AI vandaag al waarde oplevert.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 2</span>
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Werkende basis in 4 weken</span>
+          <p style="font-size: 14px; line-height: 1.55; color: #55604C; margin: 0;">Een eerste oplossing live op jullie eigen data — klein begonnen, direct bruikbaar.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 3</span>
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Mensen meenemen</span>
+          <p style="font-size: 14px; line-height: 1.55; color: #55604C; margin: 0;">Trainingen en AI-geletterdheid voor het hele team — adoptie is de helft van het succes.</p>
+        </div>
+        <div style="background: radial-gradient(ellipse 300px 200px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #C9E265;">STAP 4</span>
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #F4F4EC;">Opschalen &amp; borgen</span>
+          <p style="font-size: 14px; line-height: 1.55; color: #B9C4AC; margin: 0;">Uitbreiden naar meer processen, met governance, monitoring en doorontwikkeling.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 16px; max-width: 680px;">
+        <span style="background: #C9E265; color: #22301F; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">AI-startpakket</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">In 4 weken inzicht in de kansen van AI</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Uit de startblokken met een concreet plan om AI veilig en effectief toe te passen — voor mens, proces en technologie.</p>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+          <span style="background: rgba(201,226,101,0.14); color: #C9E265; font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px;">AI-scan</span>
+          <span style="background: rgba(201,226,101,0.14); color: #C9E265; font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px;">Workshop AI-geletterdheid</span>
+          <span style="background: rgba(201,226,101,0.14); color: #C9E265; font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px;">Kansenkaart</span>
+          <span style="background: rgba(201,226,101,0.14); color: #C9E265; font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px;">Roadmap op maat</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 12px; flex: 0 0 auto; align-items: stretch;">
+        <div style="background: rgba(244,244,236,0.08); border: 1px solid rgba(201,226,101,0.25); border-radius: 18px; padding: 14px 18px; display: flex; align-items: center; gap: 12px;">
+          <span style="width: 44px; height: 44px; border-radius: 12px; background: #C9E265; color: #22301F; display: inline-flex; align-items: center; justify-content: center; font-family: 'Sora', sans-serif; font-weight: 800; font-size: 16px; flex: 0 0 auto;">NB</span>
+          <div style="display: flex; flex-direction: column; gap: 1px;">
+            <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 15px; color: #F4F4EC;">Niek Baarsma</span>
+            <span style="font-size: 13px; color: #B9C4AC;">Trainer AI en AI-specialist</span>
+          </div>
+        </div>
+        <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; text-align: center;" style-hover="background: #B02377;">Plan een afspraak</a>
+        <a href="Zelfscan.dc.html" style="border: 1px solid rgba(201,226,101,0.45); color: #C9E265; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; text-align: center;" style-hover="border-color: #C9E265;">Doe eerst de gratis zelfscan</a>
+      </div>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, d);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() {
+    const lagen = [
+      { nr: '5', naam: 'Gebruikersplatform', sub: 'Eén ingang voor apps, agents en dashboards', chips: ['Contract checker', 'Klantagent', 'Project assistent', 'Dashboards', 'Kennisagent'] },
+      { nr: '4', naam: 'AI-modelkeuze & sturing', sub: 'De juiste intelligentie voor elke taak', chips: ['Taakgestuurde LLM-keuze', 'Agents per proces', 'Kostensturing', 'Beheer & monitoring', "Switch tussen LLM's"] },
+      { nr: '3', naam: 'AI-toegangslaag', sub: 'Controle, veiligheid en betrouwbaarheid', chips: ['Toestemming', 'Autorisaties', 'Security', 'Logging', 'Validatie'] },
+      { nr: '2', naam: 'Centrale datalaag', sub: 'Eén bron van waarheid en kwaliteit', chips: ['Ruwe data', 'Gestandaardiseerde data', 'Datakwaliteit'] },
+      { nr: '1', naam: 'Bronnen en applicaties', sub: 'Data lezen aan de bron en waar mogelijk schrijven', chips: ['ERP & Finance', 'CRM & klantdata', 'Projectsystemen', 'HR & Organisatie', 'Kennis & documenten'] },
+    ];
+    const open = this.state.openLaag ?? 0;
+    return {
+      platformLagen: lagen.map((l, i) => ({
+        ...l,
+        open: i === open,
+        chevron: i === open ? '−' : '+',
+        bg: i === open ? 'rgba(244,244,236,0.10)' : 'rgba(244,244,236,0.05)',
+        toggle: () => this.setState({ openLaag: i === (this.state.openLaag ?? 0) ? -1 : i }),
+      })),
+    };
+  }
+}
+</script>
+</body>
+</html>

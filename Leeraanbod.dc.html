@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Leeraanbod | BIM4ALL Academie</title>
+<meta name="description" content="Praktijkgericht leren voor de bouwsector: online, klassikaal of blended. Leerroutes per rol, met certificaat.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Leeraanbod" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 72px 56px; background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.22), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 22px; align-items: center; text-align: center;">
+    <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6);">Leeraanbod</span>
+    <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 860px; text-wrap: pretty;">Leren dat je <span style="color: #C9E265;">terugziet in projecten</span></h1>
+    <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 620px;">Praktijkgericht leren voor de bouwsector: online, klassikaal of gecombineerd. Zo ontwikkel je talent dat vandaag al het verschil maakt in het werk.</p>
+    <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; align-items: center; gap: 14px;">
+      <a href="Zelfscan.dc.html" style="background: #C9E265; color: #1B2618; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="background: #D8EE7E;">Doe de gratis zelfscan</a>
+      <a href="Contact.dc.html" style="border: 1px solid rgba(244,244,236,0.35); color: #F4F4EC; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="border-color: #C9E265; color: #C9E265;">Vraag advies over je leervraag</a>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 88px 56px; display: flex; flex-direction: column; gap: 128px;">
+
+    <!-- Drie leervormen -->
+    <div style="display: flex; flex-direction: column; gap: 48px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Drie leervormen</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Kies wat past — of combineer</h2>
+        <p style="font-size: 18px; line-height: 1.55; color: #55604C; margin: 0;">Elke organisatie leert anders. Daarom bieden we drie vormen die los werken en samen het sterkst zijn.</p>
+      </div>
+      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; align-items: stretch;">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 24px; overflow: hidden; display: flex; flex-direction: column;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <div style="height: 190px;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="lo-online" src="assets/foto-modules.jpeg" shape="rect" placeholder="Foto online leren" hint-size="100%,100%"></x-import></div>
+          <div style="padding: 30px 30px 34px 30px; display: flex; flex-direction: column; gap: 12px; flex: 1;">
+            <h3 style="font-family: 'Sora', sans-serif; font-size: 23px; font-weight: 700; color: #22301F; margin: 0;">Online leren</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Flexibel en plaatsonafhankelijk, in eigen tempo. Praktijkgerichte modules, direct toepasbaar in het dagelijkse werk.</p>
+            <a href="Online leren.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px; margin-top: auto;" style-hover="color: #3F5741;">Ontdek online leren <span data-arrow="r">→</span></a>
+          </div>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 24px; overflow: hidden; display: flex; flex-direction: column;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <div style="height: 190px;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="lo-klassikaal" src="assets/classroom.png" shape="rect" placeholder="Foto klassikaal leren" hint-size="100%,100%"></x-import></div>
+          <div style="padding: 30px 30px 34px 30px; display: flex; flex-direction: column; gap: 12px; flex: 1;">
+            <h3 style="font-family: 'Sora', sans-serif; font-size: 23px; font-weight: 700; color: #22301F; margin: 0;">Klassikaal leren</h3>
+            <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Verdieping en interactie met ervaren specialisten. Je werkt aan cases die aansluiten op je dagelijkse werk.</p>
+            <a href="Klassikaal leren.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px; margin-top: auto;" style-hover="color: #3F5741;">Ontdek klassikaal leren <span data-arrow="r">→</span></a>
+          </div>
+        </div>
+        <div style="background: radial-gradient(ellipse 360px 260px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 24px; padding: 34px 30px; display: flex; flex-direction: column; gap: 12px; position: relative;">
+          <span style="position: absolute; top: 24px; right: 24px; background: #C9E265; color: #22301F; font-size: 11px; font-weight: 700; padding: 4px 10px; border-radius: 999px; letter-spacing: 0.06em;">MEEST EFFECTIEF</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 23px; font-weight: 700; color: #F4F4EC; margin: 0; margin-top: 26px;">Blended leren</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #B9C4AC; margin: 0;">Online en klassikaal gecombineerd tot één leerlijn. Kennis wordt direct toegepast — je ziet resultaat in projecten.</p>
+          <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 6px;">
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #E8EEDC;"><span style="color: #C9E265;">✓</span>Hoogste leerwinst en betrokkenheid</span>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #E8EEDC;"><span style="color: #C9E265;">✓</span>Minder werkuitval</span>
+            <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: #E8EEDC;"><span style="color: #C9E265;">✓</span>Functiegericht maatwerk</span>
+          </div>
+          <a href="Blended leren.dc.html" style="background: #C9E265; color: #22301F; padding: 12px 24px; border-radius: 999px; font-weight: 700; font-size: 15px; align-self: flex-start; margin-top: auto;" style-hover="background: #D8EE7E;">Ontdek blended leren <span data-arrow="r">→</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leerroutes per rol -->
+    <div style="display: flex; flex-direction: column; gap: 40px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 760px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Leerroutes</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Groeien in je rol — stap voor stap</h2>
+        <p style="font-size: 17px; line-height: 1.55; color: #55604C; margin: 0;">Geen losse trainingen, maar een route die meegroeit met je functie. Elke route combineert online modules, klassikale dagen en praktijk — met certificaat per stap.</p>
+      </div>
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 20px; color: #22301F;">Route: Modelleur</span>
+          <div style="display: flex; flex-direction: column; gap: 0;">
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="display: flex; flex-direction: column; align-items: center; flex: 0 0 auto;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #A6C934; margin-top: 4px;"></span><span style="width: 2px; height: 34px; background: #DDE4CE;"></span></span><span style="font-size: 15px; font-weight: 600; color: #3F5741;">Introductie tot BIM &amp; BIM Basis ILS</span></div>
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="display: flex; flex-direction: column; align-items: center; flex: 0 0 auto;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #A6C934; margin-top: 4px;"></span><span style="width: 2px; height: 34px; background: #DDE4CE;"></span></span><span style="font-size: 15px; font-weight: 600; color: #3F5741;">Revit Bouwkundig of Installatietechnisch</span></div>
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #22301F; margin-top: 4px; flex: 0 0 auto;"></span><span style="font-size: 15px; font-weight: 700; color: #22301F;">Opleiding BIM-modelleur</span></div>
+          </div>
+          <span style="font-size: 13px; font-weight: 600; color: #8B937E; margin-top: auto;">Blended · Certificaat per stap</span>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 20px; color: #22301F;">Route: Coördinator</span>
+          <div style="display: flex; flex-direction: column; gap: 0;">
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="display: flex; flex-direction: column; align-items: center; flex: 0 0 auto;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #A6C934; margin-top: 4px;"></span><span style="width: 2px; height: 34px; background: #DDE4CE;"></span></span><span style="font-size: 15px; font-weight: 600; color: #3F5741;">Clash detection &amp; Solibri</span></div>
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="display: flex; flex-direction: column; align-items: center; flex: 0 0 auto;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #A6C934; margin-top: 4px;"></span><span style="width: 2px; height: 34px; background: #DDE4CE;"></span></span><span style="font-size: 15px; font-weight: 600; color: #3F5741;">Het Goede Gesprek &amp; samenwerken in teams</span></div>
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #22301F; margin-top: 4px; flex: 0 0 auto;"></span><span style="font-size: 15px; font-weight: 700; color: #22301F;">Opleiding BIM-coördinator</span></div>
+          </div>
+          <span style="font-size: 13px; font-weight: 600; color: #8B937E; margin-top: auto;">Blended · Certificaat per stap</span>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 16px;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 20px; color: #22301F;">Route: Manager &amp; organisatie</span>
+          <div style="display: flex; flex-direction: column; gap: 0;">
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="display: flex; flex-direction: column; align-items: center; flex: 0 0 auto;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #A6C934; margin-top: 4px;"></span><span style="width: 2px; height: 34px; background: #DDE4CE;"></span></span><span style="font-size: 15px; font-weight: 600; color: #3F5741;">BIM in uw bedrijfsproces &amp; NEN-EN-ISO 19650</span></div>
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="display: flex; flex-direction: column; align-items: center; flex: 0 0 auto;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #A6C934; margin-top: 4px;"></span><span style="width: 2px; height: 34px; background: #DDE4CE;"></span></span><span style="font-size: 15px; font-weight: 600; color: #3F5741;">Situationeel en coachend leiderschap</span></div>
+            <div style="display: flex; gap: 14px; align-items: flex-start;"><span style="width: 12px; height: 12px; border-radius: 999px; background: #22301F; margin-top: 4px; flex: 0 0 auto;"></span><span style="font-size: 15px; font-weight: 700; color: #22301F;">Opleiding BIM-manager</span></div>
+          </div>
+          <span style="font-size: 13px; font-weight: 600; color: #8B937E; margin-top: auto;">Blended · Certificaat per stap</span>
+        </div>
+      </div>
+      <div data-reveal style="display: flex; justify-content: center;">
+        <span style="font-size: 15px; font-weight: 600; color: #8B937E;">Elke route stemmen we af op niveau en praktijk — <a href="Contact.dc.html" style="color: #5A7A2E; font-weight: 700;" style-hover="color: #3F5741;">bespreek jouw route <span data-arrow="r">→</span></a></span>
+      </div>
+    </div>
+
+    <!-- Op maat gemaakte leertrajecten -->
+    <div data-reveal style="display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center;">
+      <div style="height: 420px;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="lo-leertrajecten" src="assets/foto-leertrajecten.jpeg" shape="rounded" radius="24" placeholder="Foto leertraject" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Leertrajecten</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Op maat gemaakte leertrajecten</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #55604C; margin: 0;">Wij ontwikkelen gespecialiseerde en gepersonaliseerde blended leertrajecten voor jouw organisatie — voor een zo hoog mogelijk leerrendement. Online leren wissel je af met klassikale verdieping en leren op de werkplek, waarbij advies, strategie en begeleiding centraal staan.</p>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+          <a href="Blended leren.dc.html" style="background: #22301F; color: #C9E265; font-size: 14px; font-weight: 700; padding: 9px 18px; border-radius: 999px;">Blended leren</a>
+          <a href="Klassikaal leren.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.25); color: #3F5741; font-size: 14px; font-weight: 700; padding: 9px 18px; border-radius: 999px;" style-hover="border-color: #3F5741;">Klassikaal leren</a>
+          <a href="Consulting.dc.html" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.25); color: #3F5741; font-size: 14px; font-weight: 700; padding: 9px 18px; border-radius: 999px;" style-hover="border-color: #3F5741;">Consulting</a>
+        </div>
+        <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 13px 26px; border-radius: 999px; font-weight: 700; font-size: 16px; align-self: flex-start; margin-top: 6px;" style-hover="background: #B02377;">Bespreek jouw leervraag <span data-arrow="r">→</span></a>
+      </div>
+    </div>
+
+    <!-- Voor wie -->
+    <div style="display: flex; flex-direction: column; gap: 40px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Voor wie</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Leren op elk niveau, voor elke rol</h2>
+      </div>
+      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Voor professionals</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0;">BIM-coördinatoren, modelleurs en werkvoorbereiders die functiegericht willen groeien — met certificaat.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Voor HR &amp; opleiders</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0;">Grip op talentontwikkeling met leertrajecten, een LMS en inzicht in voortgang per functiegroep.</p>
+        </div>
+        <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px 28px; display: flex; flex-direction: column; gap: 10px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Voor directie</span>
+          <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0;">Leren gekoppeld aan strategie: aantoonbaar resultaat in projecten en een organisatie die wendbaar blijft.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Niet zeker waar je moet beginnen?</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Leg je leervraag vrijblijvend voor — we denken graag mee. Vaak met SLIM-subsidie.</p>
+      </div>
+      <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, d);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

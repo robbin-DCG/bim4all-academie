@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Contact | BIM4ALL Academie</title>
+<meta name="description" content="Plan een kennismaking of stel je vraag — binnen één werkdag reactie.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+  input, textarea { font-family: 'Figtree', sans-serif; }
+
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Contact" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero + form -->
+  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 64px; align-items: start;">
+    <div style="display: flex; flex-direction: column; gap: 24px; padding-top: 24px;">
+      <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Contact</span>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 56px; line-height: 1.06; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Laten we <span style="color: #C9E265;">kennismaken</span></h1>
+      <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 460px;">Vraag over ons leeraanbod, consulting of AI? Stuur een bericht of bel ons — we reageren binnen één werkdag.</p>
+      <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; flex-direction: column; gap: 16px;">
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 44px; height: 44px; border-radius: 14px; background: rgba(201,226,101,0.14); color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto;">✉</span>
+          <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6E7A61;">E-mail</div><div style="font-size: 17px; font-weight: 600; color: #F4F4EC;">info.academie@bim4all.com</div></div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 44px; height: 44px; border-radius: 14px; background: rgba(201,226,101,0.14); color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto;">✆</span>
+          <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6E7A61;">Telefoon</div><div style="font-size: 17px; font-weight: 600; color: #F4F4EC;">0548 - 37 67 97</div></div>
+        </div>
+        <div style="display: flex; align-items: center; gap: 14px;">
+          <span style="width: 44px; height: 44px; border-radius: 14px; background: rgba(201,226,101,0.14); color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto;">⌂</span>
+          <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6E7A61;">Bezoekadres</div><div style="font-size: 17px; font-weight: 600; color: #F4F4EC;">Nijverdalseweg 133, 7461 AG Rijssen</div></div>
+        </div>
+      </div>
+      <div style="background: rgba(244,244,236,0.06); border: 1px solid rgba(201,226,101,0.22); border-radius: 20px; padding: 22px 26px; display: flex; align-items: center; gap: 18px; max-width: 440px;">
+        <img src="assets/team-melvin.png" alt="Melvin van Puffelen" style="width: 72px; height: 72px; border-radius: 16px; object-fit: cover; display: block; flex: 0 0 auto;">
+        <div style="display: flex; flex-direction: column; gap: 3px;">
+          <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 17px; color: #F4F4EC;">Melvin van Puffelen</span>
+          <span style="font-size: 14px; color: #AAB69B;">Onderwijskundig adviseur — denkt graag met je mee</span>
+          <span style="font-size: 14px; font-weight: 600; color: #C9E265;">06 342 748 73</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Formulier -->
+    <div style="animation: fadeUp 0.8s ease 0.3s both; background: #F4F4EC; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 24px 64px rgba(0,0,0,0.35);">
+      <h2 style="font-family: 'Sora', sans-serif; font-size: 26px; font-weight: 800; color: #22301F; margin: 0;">Stuur ons een bericht</h2>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+        <input placeholder="Voornaam *" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
+        <input placeholder="Achternaam *" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+        <input placeholder="E-mail *" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
+        <input placeholder="Telefoon" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
+      </div>
+      <input placeholder="Organisatie" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
+      <div style="display: flex; flex-wrap: wrap; gap: 8px;">
+        <sc-for list="{{ onderwerpen }}" as="o" hint-placeholder-count="4">
+          <span onClick="{{ o.kies }}" style="background: {{ o.bg }}; color: {{ o.kleur }}; border: 1px solid rgba(63,87,65,0.25); font-size: 13px; font-weight: 700; padding: 7px 16px; border-radius: 999px; cursor: pointer;">{{ o.naam }}</span>
+        </sc-for>
+      </div>
+      <textarea placeholder="Waar kunnen we je mee helpen?" rows="4" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none; resize: vertical;" style-focus="border-color: #A6C934;"></textarea>
+      <span style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; cursor: pointer; align-self: flex-start;" style-hover="background: #B02377;">Verstuur bericht</span>
+    </div>
+  </div>
+
+  <!-- Direct inplannen -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; padding: 72px 56px 0 56px;">
+    <div style="background: radial-gradient(ellipse 480px 300px at 90% 0%, rgba(255,255,255,0.35), transparent 60%), #C9E265; border-radius: 24px; padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+      <div style="display: flex; flex-direction: column; gap: 8px; max-width: 640px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 28px; font-weight: 800; color: #22301F; margin: 0;">Liever direct een moment prikken?</h2>
+        <p style="font-size: 16px; line-height: 1.6; color: #44532B; margin: 0;">Plan zelf een online kennismaking van 30 minuten in de agenda — geen formulier, geen wachttijd.</p>
+      </div>
+      <a href="#" data-comment-anchor="agenda-link" style="background: #22301F; color: #C9E265; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;">Plan direct in de agenda <span data-arrow="r">→</span></a>
+    </div>
+  </div>
+
+  <!-- FAQ -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; padding: 72px 56px; display: flex; flex-direction: column; gap: 36px;">
+    <div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+      <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Veelgestelde vragen</span>
+      <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Snel antwoord op je vraag</h2>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 12px; max-width: 860px; width: 100%; margin: 0 auto;">
+      <sc-for list="{{ faq }}" as="v" hint-placeholder-count="6">
+        <div onClick="{{ v.toggle }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.1); border-radius: 16px; padding: 22px 28px; display: flex; flex-direction: column; gap: 12px; cursor: pointer;" style-hover="border-color: rgba(63,87,65,0.3);">
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+            <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 17px; color: #22301F;">{{ v.vraag }}</span>
+            <span style="color: #7BA218; font-size: 20px; font-weight: 700; flex: 0 0 auto;">{{ v.teken }}</span>
+          </div>
+          <sc-if value="{{ v.open }}" hint-placeholder-val="{{ false }}">
+            <p style="font-size: 15px; line-height: 1.6; color: #55604C; margin: 0; max-width: 720px;">{{ v.antwoord }}</p>
+          </sc-if>
+        </div>
+      </sc-for>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { onderwerp: 'Leeraanbod', faqOpen: 0 };
+  faqData = [
+    ['Wat is de SLIM-subsidie en komen wij in aanmerking?', 'De SLIM-subsidie vergoedt tot 80% van advies- en ontwikkeluren (max. €25.000 per organisatie) voor leren en ontwikkelen in het mkb. Wij helpen kosteloos met de aanvraag en beoordelen samen of jouw traject in aanmerking komt.'],
+    ['Kunnen trainingen ook incompany?', 'Ja — vrijwel al onze trainingen en opleidingen geven we ook incompany, afgestemd op jullie projecten en werkwijze. Maatwerk is mogelijk vanaf 4 personen.'],
+    ['Hoe snel kunnen we starten?', 'Een kennismakingsgesprek plannen we binnen één week. Losse trainingen starten vaak binnen enkele weken; blended leertrajecten stellen we binnen 2 tot 4 weken samen.'],
+    ['Wat kost een training of traject?', 'Dat hangt af van vorm, groepsgrootte en maatwerk. Na een korte intake ontvang je een transparante offerte — vaak met SLIM-subsidie een stuk voordeliger dan verwacht.'],
+    ['Voor wie zijn de trainingen geschikt?', 'Voor de hele organisatie: van modelleurs, werkvoorbereiders en BIM-coördinatoren tot projectleiders, HR en directie. We stemmen inhoud en niveau af op de rol en praktijk van de deelnemers.'],
+    ['Krijgen deelnemers een certificaat?', 'Ja, deelnemers sluiten trainingen en opleidingen af met een toets en ontvangen een certificaat. Voortgang is inzichtelijk voor deelnemer én werkgever.'],
+  ];
+  renderVals() {
+    const t = this.state.onderwerp;
+    return {
+      faq: this.faqData.map(([vraag, antwoord], i) => ({
+        vraag, antwoord,
+        open: this.state.faqOpen === i,
+        teken: this.state.faqOpen === i ? '−' : '+',
+        toggle: () => this.setState({ faqOpen: this.state.faqOpen === i ? -1 : i }),
+      })),
+      onderwerpen: ['Leeraanbod', 'Consulting', 'AI', 'SLIM-subsidie', 'Anders'].map((naam) => ({
+        naam,
+        bg: naam === t ? '#22301F' : '#FFFFFF',
+        kleur: naam === t ? '#C9E265' : '#3F5741',
+        kies: () => this.setState({ onderwerp: naam }),
+      })),
+    };
+  }
+}
+</script>
+</body>
+</html>

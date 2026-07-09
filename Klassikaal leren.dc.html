@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1280">
+<title>Klassikaal leren | BIM4ALL Academie</title>
+<meta name="description" content="Klassikale trainingen en opleidingen voor de bouw- en installatiesector: praktijkgericht, op maat en gecertificeerd.">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #1B2618; font-family: 'Figtree', sans-serif; }
+  a { color: #5A7A2E; text-decoration: none; }
+  a:hover { color: #3F5741; }
+  ::selection { background: #A6C934; color: #22301F; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+  @keyframes aiPulse { 0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.75; } 50% { transform: scale(1.3) rotate(20deg); opacity: 1; } }
+
+  [data-arrow] { display: inline-block; transition: transform 0.25s ease; }
+  *:hover > [data-arrow="r"] { transform: translateX(6px); }
+  *:hover > [data-arrow="ne"] { transform: translate(3px, -3px); }
+</style>
+</helmet>
+
+<div data-screen-label="Klassikaal leren" style="min-width: 1280px; background: #1B2618;">
+
+  <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
+
+  <!-- Hero -->
+  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+    <div style="display: flex; flex-direction: column; gap: 24px;">
+      <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Leeraanbod · Klassikaal</span>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Klassikaal leren dat <span style="color: #C9E265;">blijft hangen</span></h1>
+      <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">Ontwikkel je vaardigheden met klassikale leertrajecten die aansluiten op je dagelijkse werk. Interactief, functiegericht en direct toepasbaar.</p>
+      <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; align-items: center; gap: 14px;">
+        <a href="Contact.dc.html" style="background: #C9E265; color: #1B2618; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="background: #D8EE7E;">Vraag het aanbod aan</a>
+        <a href="Online leren.dc.html" style="border: 1px solid rgba(244,244,236,0.35); color: #F4F4EC; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="border-color: #C9E265; color: #C9E265;">Liever online leren?</a>
+      </div>
+    </div>
+    <div style="animation: fadeUp 0.8s ease 0.35s both; height: 420px;">
+      <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="klassikaal-hero" src="assets/foto-klassikaal-les.jpeg" shape="rounded" radius="24" placeholder="Sleep hier een trainingsfoto" hint-size="100%,100%"></x-import>
+    </div>
+  </div>
+
+  <!-- Licht deel -->
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 88px;">
+
+    <!-- Cijfers -->
+    <div data-reveal style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 24px;">
+      <div style="display: flex; flex-direction: column; gap: 4px; align-items: center; text-align: center;">
+        <span style="font-family: 'Sora', sans-serif; font-size: 44px; font-weight: 800; color: #22301F;">750+</span>
+        <span style="font-size: 15px; font-weight: 600; color: #55604C;">Uitgegeven certificaten</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px; align-items: center; text-align: center;">
+        <span style="font-family: 'Sora', sans-serif; font-size: 44px; font-weight: 800; color: #22301F;">14</span>
+        <span style="font-size: 15px; font-weight: 600; color: #55604C;">Verschillende onderwerpen</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px; align-items: center; text-align: center;">
+        <span style="font-family: 'Sora', sans-serif; font-size: 44px; font-weight: 800; color: #22301F;">115</span>
+        <span style="font-size: 15px; font-weight: 600; color: #55604C;">Klanten</span>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 4px; align-items: center; text-align: center;">
+        <span style="font-family: 'Sora', sans-serif; font-size: 44px; font-weight: 800; color: #A6C934;">9.1</span>
+        <span style="font-size: 15px; font-weight: 600; color: #55604C;">Tevredenheidscijfer</span>
+      </div>
+    </div>
+
+    <!-- Kenmerken -->
+    <div style="display: flex; flex-direction: column; gap: 48px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Zo leren wij</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Trainingen die aansluiten op jouw werk</h2>
+        <p style="font-size: 18px; line-height: 1.55; color: #55604C; margin: 0;">Geen standaard cursus uit een map: elke training wordt afgestemd op functie, niveau en de projecten waar jij aan werkt.</p>
+      </div>
+      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">01</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">Functiegericht &amp; op maat</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">Voor modelleurs, BIM-coördinatoren, werkvoorbereiders en management — ieder leert wat híj morgen nodig heeft.</p>
+        </div>
+        <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">02</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">Interactief met eigen casussen</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #55604C; margin: 0;">We werken met jouw projecten en modellen. Wat je vandaag leert, pas je morgen toe.</p>
+        </div>
+        <div style="background: radial-gradient(ellipse 360px 260px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px;">
+          <span style="width: 52px; height: 52px; border-radius: 16px; background: #C9E265; color: #22301F; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">03</span>
+          <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #F4F4EC; margin: 0;">Gecertificeerd &amp; blended</h3>
+          <p style="font-size: 16px; line-height: 1.6; color: #B9C4AC; margin: 0;">Certificaat na afronding, incompany mogelijk en te combineren met online modules in een blended traject.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Trainingsaanbod -->
+    <div style="display: flex; flex-direction: column; gap: 36px;">
+      <!-- Opleidingen: het podium -->
+      <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 760px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Onze opleidingen</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Word dé specialist die de bouw nodig heeft</h2>
+        <p style="font-size: 17px; line-height: 1.55; color: #55604C; margin: 0;">Onze opleidingen combineren hard skills én soft skills — daarom zijn ze het meest succesvol. Compleet, functiegericht en met certificaat.</p>
+      </div>
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+        <sc-for list="{{ opleidingen }}" as="op" hint-placeholder-count="3">
+          <a href="{{ op.href }}" style="background: radial-gradient(ellipse 380px 280px at 85% 0%, rgba(166,201,52,0.32), transparent 65%), #22301F; border: 2px solid #A6C934; box-shadow: 0 14px 40px rgba(166,201,52,0.22); border-radius: 24px; padding: 34px 32px; display: flex; flex-direction: column; gap: 12px; color: inherit; position: relative;">
+            <sc-if value="{{ op.heeftBadge }}" hint-placeholder-val="{{ false }}">
+              <span style="position: absolute; top: -12px; right: 20px; background: #A6C934; color: #22301F; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; padding: 5px 14px; border-radius: 999px; box-shadow: 0 2px 8px rgba(34,48,31,0.15);">{{ op.badge }}</span>
+            </sc-if>
+            <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #8FA07E;">Opleiding · {{ op.tag }}</span>
+            <h3 style="font-family: 'Sora', sans-serif; font-size: 24px; font-weight: 700; color: #F4F4EC; margin: 0;">{{ op.titel }}</h3>
+            <p style="font-size: 15px; line-height: 1.6; color: #B9C4AC; margin: 0;">{{ op.tekst }}</p>
+            <span style="font-size: 13px; font-weight: 600; color: #8FA07E;">{{ op.meta }}</span>
+            <span style="background: #C9E265; color: #22301F; padding: 11px 22px; border-radius: 999px; font-weight: 700; font-size: 15px; align-self: flex-start; margin-top: auto;">Bekijk de opleiding <span data-arrow="r">→</span></span>
+          </a>
+        </sc-for>
+      </div>
+
+      <!-- Trainingen & kennissessies -->
+      <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 860px; margin: 32px auto 0 auto; text-align: center; align-items: center;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 34px; line-height: 1.1; font-weight: 800; color: #22301F; margin: 0;">Trainingen &amp; kennissessies</h2>
+        <p style="font-size: 16px; line-height: 1.55; color: #55604C; margin: 0;">Gericht verdiepen op één onderwerp — los te volgen of als opstap naar een opleiding.</p>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
+          <sc-for list="{{ filters }}" as="f" hint-placeholder-count="6">
+            <span onClick="{{ f.kies }}" style="background: {{ f.bg }}; color: {{ f.kleur }}; border: 1px solid rgba(63,87,65,0.25); font-size: 14px; font-weight: 700; padding: 9px 20px; border-radius: 999px; cursor: pointer;">{{ f.naam }}</span>
+          </sc-for>
+        </div>
+      </div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+        <sc-for list="{{ trainingen }}" as="tr" hint-placeholder-count="6">
+          <div style="background: #FFFFFF; border: {{ tr.kaartRand }}; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 12px; position: relative;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
+            <sc-if value="{{ tr.heeftBadge }}" hint-placeholder-val="{{ false }}">
+              <span style="position: absolute; top: -12px; right: 20px; background: #A6C934; color: #22301F; font-size: 11px; font-weight: 800; letter-spacing: 0.08em; padding: 5px 14px; border-radius: 999px; box-shadow: 0 2px 8px rgba(34,48,31,0.15);">{{ tr.badge }}</span>
+            </sc-if>
+            <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+              <span style="background: #22301F; color: #C9E265; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 5px 12px; border-radius: 999px;">{{ tr.type }}</span>
+              <span style="background: #E8F0C8; color: #4A6318; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 5px 12px; border-radius: 999px;">{{ tr.tag }}</span>
+            </div>
+            <h3 style="font-family: 'Sora', sans-serif; font-size: 19px; font-weight: 700; color: #22301F; margin: 0; line-height: 1.3;">{{ tr.titel }}</h3>
+            <p style="font-size: 15px; line-height: 1.55; color: #55604C; margin: 0;">{{ tr.tekst }}</p>
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 4px;">
+              <span style="font-size: 13px; font-weight: 600; color: #8B937E;">{{ tr.meta }}</span>
+              <a href="{{ tr.href }}" style="color: #5A7A2E; font-weight: 700; font-size: 15px; white-space: nowrap;" style-hover="color: #3F5741;">Lees meer <span data-arrow="r">→</span></a>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ meerTonen }}" hint-placeholder-val="{{ false }}">
+        <div style="display: flex; justify-content: center;">
+          <span onClick="{{ toonAlles }}" style="border: 1px solid rgba(63,87,65,0.3); color: #3F5741; padding: 12px 28px; border-radius: 999px; font-weight: 700; font-size: 15px; cursor: pointer;" style-hover="border-color: #3F5741; background: #FFFFFF;">Toon alle trainingen ({{ totaal }})</span>
+        </div>
+      </sc-if>
+    </div>
+
+    <!-- Trigger: verder dan een losse training -->
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+      <div style="display: flex; flex-direction: column; gap: 14px; max-width: 680px;">
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 34px; line-height: 1.12; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Een losse training lost zelden het echte probleem op</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">De vraag begint vaak bij een training, maar de behoefte ligt meestal dieper: structuur, strategie en visie. In een gesprek brengen we in beeld wat jouw organisatie écht verder helpt — en dan pas investeren we in mensen en middelen.</p>
+      </div>
+      <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Ga het gesprek aan</a>
+    </div>
+
+    <!-- Aanpak -->
+    <div data-reveal style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center;">
+      <div style="height: 440px;">
+        <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="klassikaal-aanpak" src="assets/foto-training-overleg.jpeg" shape="rounded" radius="24" placeholder="Foto training" hint-size="100%,100%"></x-import>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 18px;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Training en ontwikkeling</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Onze aanpak: leren met impact</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #55604C; margin: 0;">Geen standaardverhaal, maar trainingen die echt verschil maken — gericht op direct toepasbare kennis, slimmer samenwerken en het versterken van mensen én processen.</p>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px 24px;">
+          <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Maatwerk vanaf 4 personen</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Klassikaal of in-company</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Opgesteld met kennis uit de praktijk</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Praktisch en pragmatisch</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Persoonlijke benadering</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #3F5741;"><span style="color: #7BA218;">✓</span>Balans tussen hard- en softskills</span>
+        </div>
+        <a href="Contact.dc.html" style="background: #C9E265; color: #22301F; padding: 13px 26px; border-radius: 999px; font-weight: 700; font-size: 16px; align-self: flex-start; margin-top: 6px;" style-hover="background: #D8EE7E;">Ontdek jouw mogelijkheden <span data-arrow="r">→</span></a>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div style="display: flex; flex-direction: column; gap: 36px;">
+      <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
+        <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Reviews</span>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Wat deelnemers zeggen</h2>
+      </div>
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <sc-for list="{{ reviews }}" as="rv" hint-placeholder-count="4">
+          <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 30px; display: flex; flex-direction: column; gap: 14px;">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 16px;">
+              <div style="display: flex; flex-direction: column; gap: 2px;">
+                <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 17px; color: #22301F;">{{ rv.bedrijf }}</span>
+                <span style="font-size: 14px; color: #8B937E;">{{ rv.functie }}</span>
+              </div>
+              <span style="display: inline-flex; align-items: center; gap: 8px;"><span style="color: #A6C934; font-size: 15px; letter-spacing: 2px;">★★★★★</span><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 18px; color: #4A6318;">{{ rv.cijfer }}</span></span>
+            </div>
+            <p style="font-size: 16px; line-height: 1.6; color: #3F5741; margin: 0; font-style: italic;">{{ rv.tekst }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <!-- SLIM -->
+    <div data-reveal style="background: #FFFFFF; border: 1px dashed rgba(63,87,65,0.35); border-radius: 20px; padding: 28px 36px; display: flex; align-items: center; gap: 28px;">
+      <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; flex: 0 0 auto;">SLIM-subsidie</span>
+      <p style="font-size: 16px; line-height: 1.55; color: #55604C; margin: 0; flex: 1;">Tot 80% van de advies- en ontwikkeluren vergoed, met een maximum van €25.000 per organisatie. Wij helpen je met de aanvraag.</p>
+      <a href="Contact.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px; white-space: nowrap;">Meer weten <span data-arrow="r">→</span></a>
+    </div>
+  </div>
+
+  <dc-import name="Footer" hint-size="100%,480px"></dc-import>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { filter: 'Alle', alles: false };
+  aanbod = [
+    { type: 'OPLEIDING', tag: 'REVIT', slug: 'bim-modelleur', titel: 'BIM-modelleur', tekst: 'De functie van BIM-modelleur kent veel facetten, waarin hard- en social skills elkaar naadloos aanvullen.', meta: 'Eerstvolgende start: sept 2026 · Incompany mogelijk' },
+    { type: 'OPLEIDING', tag: 'COÖRDINATOR', slug: 'bim-coordinator', titel: 'BIM-coördinator', tekst: 'Als BIM-coördinator ben jij de technische spil voor het koppelen van gebouwmodellen en aspectmodellen.', meta: 'Eerstvolgende start: okt 2026 · Incompany mogelijk', badge: 'MEEST GEKOZEN' },
+    { type: 'OPLEIDING', tag: 'STANDAARDEN', slug: 'bim-manager', titel: 'BIM-manager', tekst: 'Breng BIM in jouw organisatie naar het volgende level — van visie tot verankering.', meta: 'Eerstvolgende start: nov 2026 · Incompany mogelijk' },
+    { type: 'TRAINING', tag: 'REVIT', slug: 'revit-installatietechnisch', titel: 'Revit Installatietechnisch', tekst: 'Leer modelleren voor installatietechniek met de Revit MEP-training.', meta: 'Training · Certificaat' },
+    { type: 'KENNISSESSIE', tag: 'AI', slug: 'ai-slim-aan-de-slag', titel: 'Slim aan de slag met AI in de bouw', tekst: 'Ontdek wat AI vandaag al kan betekenen voor jouw werk in de bouw.', meta: 'Kennissessie · Dagdeel' },
+    { type: 'TRAINING', tag: 'SOCIAL SKILLS', slug: 'serious-game', titel: 'Serious Game: De Kracht van een Goede Start', tekst: 'Ervaar hoe samenwerking werkt en vertaal inzichten direct naar jouw projectpraktijk.', meta: 'Training · Interactief', badge: 'MAAKT IMPACT' },
+    { type: 'TRAINING', tag: 'COÖRDINATOR', slug: 'solibri', titel: 'Solibri', tekst: 'Haal meer uit je 3D-modellen. De basistraining is ideaal voor de startende coördinator.', meta: 'Training · Certificaat' },
+    { type: 'TRAINING', tag: 'AI', slug: 'ai-geletterdheid', titel: 'Succesvol starten met AI', tekst: 'Basiskennis en vaardigheden om AI veilig en verantwoord toe te passen in je functie — ook wel AI-geletterdheid.', meta: 'Training · Certificaat', badge: 'VEEL VRAAG' },
+    { type: 'TRAINING', tag: 'AI', slug: 'ai-basistraining', titel: 'AI Basistraining', tekst: 'Praktische start met AI: van prompts tot toepassing in je dagelijkse bouwpraktijk.', meta: 'Training · Certificaat' },
+    { type: 'TRAINING', tag: 'SOCIAL SKILLS', slug: 'jij-als-professional', titel: 'Jij als professional', tekst: 'Versterk eigenaarschap en persoonlijke effectiviteit in je rol.', meta: 'Training · Interactief' },
+    { type: 'TRAINING', tag: 'SOCIAL SKILLS', slug: 'goede-gesprek', titel: 'Het Goede Gesprek & Professionele Communicatie', tekst: 'Ontwikkel communicatievaardigheden met focus op verbinding en duidelijkheid.', meta: 'Training · Interactief' },
+    { type: 'TRAINING', tag: 'SOCIAL SKILLS', slug: 'werken-in-teams', titel: 'Werken in teams en projectgroepen', tekst: 'Slimmer samenwerken in multidisciplinaire teams en projectgroepen.', meta: 'Training · Interactief' },
+    { type: 'TRAINING', tag: 'SOCIAL SKILLS', slug: 'omgaan-met-verandering', titel: 'Omgaan met verandering', tekst: 'Beweeg soepel mee met digitalisering en veranderende werkwijzen.', meta: 'Training · Interactief' },
+    { type: 'TRAINING', tag: 'SOCIAL SKILLS', slug: 'verantwoordelijkheid-eigenaarschap', titel: 'De 4-ledige verantwoordelijkheid & eigenaarschap', tekst: 'Vergroot eigenaarschap: de juiste dingen, op de juiste plek, door de juiste mensen.', meta: 'Training · Interactief' },
+    { type: 'TRAINING', tag: 'SOCIAL SKILLS', slug: 'situationeel-leiderschap', titel: 'Situationeel en coachend leiderschap', tekst: 'Inzicht in persoonlijke drijfveren, kernkwaliteiten en ontwikkelpunten.', meta: 'Training · Interactief' },
+    { type: 'OPLEIDING', tag: 'SOCIAL SKILLS', slug: 'talent-benutten', titel: 'Talent optimaal benutten in team en organisatie', tekst: 'Haal het beste uit talent in jouw team, project en organisatie.', meta: 'Opleiding · Incompany' },
+    { type: 'TRAINING', tag: 'REVIT', slug: 'revit-bouwkundig', titel: 'Revit Bouwkundig', tekst: 'Leer de basisbeginselen van Autodesk Revit tijdens de driedaagse basistraining.', meta: '3 dagen · Start: sept 2026 · Certificaat' },
+    { type: 'TRAINING', tag: 'COÖRDINATOR', slug: 'bimcollab-zoom', titel: 'BIMcollab ZOOM', tekst: 'Valideer en controleer 3D-modellen en haal er de juiste informatie uit.', meta: 'Training · Certificaat' },
+    { type: 'KENNISSESSIE', tag: 'REVIT', slug: 'revit-point-clouds', titel: 'Revit en Point clouds', tekst: 'Benut puntenwolken bij het modelleren van revisie- of herbestemmingsprojecten.', meta: 'Kennissessie · Dagdeel' },
+    { type: 'KENNISSESSIE', tag: 'PROCES', slug: 'dalux', titel: 'Dalux', tekst: 'Zorg dat alle projectinformatie op elk moment voor iedereen toegankelijk is.', meta: 'Kennissessie · Dagdeel' },
+    { type: 'KENNISSESSIE', tag: 'STANDAARDEN', slug: 'nen-en-iso-19650', titel: 'NEN-EN-ISO 19650', tekst: 'De internationale norm voor informatiebeheer over de hele levenscyclus van een gebouw.', meta: 'Kennissessie · Dagdeel' },
+    { type: 'TRAINING', tag: 'REVIT', slug: 'dynamo', titel: 'Dynamo voor Revit', tekst: 'Optimaliseer processen en vereenvoudig werkzaamheden met Dynamo.', meta: 'Training · Certificaat' },
+    { type: 'KENNISSESSIE', tag: 'BASIS BIM', slug: 'introductie-bim', titel: 'Introductie tot BIM', tekst: 'Wat is BIM? Geschikt voor iedereen die ermee te maken heeft of krijgt.', meta: 'Kennissessie · Dagdeel' },
+    { type: 'KENNISSESSIE', tag: 'PROCES', slug: 'bim-bedrijfsproces', titel: 'BIM in uw bedrijfsproces', tekst: 'Pas BIM structureel toe: integreren in werkprocessen lukt alleen met een goede aanpak.', meta: 'Kennissessie · Dagdeel' },
+    { type: 'KENNISSESSIE', tag: 'BASIS BIM', slug: 'bim-basis-ils', titel: 'BIM Basis ILS', tekst: 'Zet de BIM Basis ILS in als basisstructuur voor iedereen die met 3D-modellen werkt.', meta: 'Kennissessie · Dagdeel' },
+  ];
+  componentDidMount() {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) {
+        if (!e.isIntersecting) continue;
+        const el = e.target;
+        const d = parseInt(el.getAttribute('data-reveal-delay') || '0', 10);
+        setTimeout(() => {
+          el.style.transition = 'opacity 0.7s ease, transform 0.7s ease';
+          el.style.opacity = '1';
+          el.style.transform = 'none';
+        }, d);
+        io.unobserve(el);
+      }
+    }, { threshold: 0.15 });
+    document.querySelectorAll('[data-reveal]').forEach((el) => {
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(24px)';
+      io.observe(el);
+    });
+  }
+  renderVals() {
+    const cats = ['Alle', 'REVIT', 'AI', 'SOCIAL SKILLS', 'COÖRDINATOR', 'PROCES', 'BASIS BIM', 'STANDAARDEN'];
+    const filter = this.state.filter;
+    const maak = (a) => ({ ...a, heeftBadge: !!a.badge, href: a.slug ? 'Training.dc.html?t=' + a.slug : 'Contact.dc.html', kaartRand: a.badge ? '2px solid #A6C934' : '1px solid rgba(63,87,65,0.08)' });
+    const opleidingen = this.aanbod.filter((a) => a.type === 'OPLEIDING' && a.tag !== 'SOCIAL SKILLS').map(maak);
+    let gefilterd = this.aanbod.filter((a) => a.type !== 'OPLEIDING' || a.tag === 'SOCIAL SKILLS').filter((a) => filter === 'Alle' || a.tag === filter);
+    gefilterd.sort((a, b) => (b.badge ? 1 : 0) - (a.badge ? 1 : 0));
+    gefilterd = gefilterd.map(maak);
+    const zichtbaar = this.state.alles ? gefilterd : gefilterd.slice(0, 6);
+    return {
+      filters: cats.map((naam) => ({
+        naam: ({'Alle':'Alle','REVIT':'Revit','AI':'AI','SOCIAL SKILLS':'Social skills','COÖRDINATOR':'Coördinator','PROCES':'Proces','BASIS BIM':'Basis BIM','STANDAARDEN':'Standaarden'})[naam],
+        bg: naam === filter ? '#22301F' : '#FFFFFF',
+        kleur: naam === filter ? '#C9E265' : '#3F5741',
+        kies: () => this.setState({ filter: naam, alles: false }),
+      })),
+      opleidingen,
+      trainingen: zichtbaar,
+      meerTonen: gefilterd.length > zichtbaar.length,
+      totaal: gefilterd.length,
+      toonAlles: () => this.setState({ alles: true }),
+      reviews: [
+        { bedrijf: 'Akor', functie: 'Calculator', cijfer: '9.3', tekst: '“Ik vond het fijn dat de focus lag op Solibri, dit gaf toegevoegde waarde voor het calculatieproces.”' },
+        { bedrijf: 'Orion', functie: 'BIM-modelleur', cijfer: '9.3', tekst: '“De training had een duidelijke structuur, was goed te volgen en had een prettige opbouw. Fijn dat er ruimte is voor herhaling.”' },
+        { bedrijf: 'Ter Steege', functie: 'BIM-modelleur', cijfer: '8.8', tekst: '“De training was zeer prettig. Fijn om cursusmateriaal na de training te ontvangen. De opgedane kennis is te gebruiken in de praktijk.”' },
+        { bedrijf: 'Van Norel', functie: 'Calculator', cijfer: '8.7', tekst: '“De trainer was zeer vriendelijk en deskundig. Hij heeft goede begeleiding gegeven voor mijn specifieke situatie.”' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>
