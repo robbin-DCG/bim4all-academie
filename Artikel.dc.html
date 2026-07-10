@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kenniscentrum | BIM4ALL Academie</title>
 <meta name="description" content="Praktijkkennis over BIM, digitalisering en AI in de bouw.">
 <script src="./support.js"></script>
@@ -26,23 +26,23 @@
 </style>
 </helmet>
 
-<div data-screen-label="Kennisartikel" style="min-width: 1280px; background: #1B2618;">
+<div data-screen-label="Kennisartikel" style="overflow-x: clip; background: #1B2618;">
 
   <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
 
   <!-- Hero -->
-  <div style="position: relative; padding: 64px 56px 72px 56px; background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;">
+  <div style="position: relative; padding: clamp(36px, 5.5vw, 64px) clamp(20px, 4.4vw, 56px) clamp(40px, 6vw, 72px) clamp(20px, 4.4vw, 56px); background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 20px; align-items: center; text-align: center;">
     <a href="Kenniscentrum.dc.html" style="color: #8FA07E; font-weight: 600; font-size: 14px;" style-hover="color: #C9E265;">← Kenniscentrum</a>
     <div style="display: flex; gap: 10px; align-items: center;">
       <span style="background: #C9E265; color: #1B2618; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">{{ thema }}</span>
       <span style="font-size: 14px; font-weight: 600; color: #8FA07E;">{{ leestijd }} leestijd</span>
     </div>
-    <h1 style="font-family: 'Sora', sans-serif; font-size: 46px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 860px; text-wrap: pretty;">{{ titel }}</h1>
+    <h1 style="font-family: 'Sora', sans-serif; font-size: clamp(30px, 5.2vw, 46px); line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 860px; text-wrap: pretty;">{{ titel }}</h1>
     <p style="font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 640px;">{{ intro }}</p>
   </div>
 
   <!-- Artikel -->
-  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 88px 56px; display: flex; flex-direction: column; gap: 72px;">
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: clamp(48px, 7.5vw, 88px) clamp(20px, 4.4vw, 56px); display: flex; flex-direction: column; gap: 72px;">
     <div style="max-width: 780px; margin: 0 auto; width: 100%; display: flex; flex-direction: column; gap: 40px;">
       <sc-for list="{{ secties }}" as="s" hint-placeholder-count="4">
         <div style="display: flex; flex-direction: column; gap: 14px;">
@@ -61,7 +61,7 @@
     <!-- Meer artikelen -->
     <div data-reveal style="display: flex; flex-direction: column; gap: 24px;">
       <h2 style="font-family: 'Sora', sans-serif; font-size: 28px; font-weight: 800; color: #22301F; margin: 0; text-align: center;">Lees ook</h2>
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 20px;">
         <sc-for list="{{ meer }}" as="m" hint-placeholder-count="3">
           <a href="{{ m.href }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px; color: inherit;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
             <span style="background: #E8F0C8; color: #4A6318; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; padding: 5px 12px; border-radius: 999px; align-self: flex-start;">{{ m.thema }}</span>
@@ -73,9 +73,9 @@
     </div>
 
     <!-- CTA -->
-    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: clamp(28px, 4.6vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px;">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 34px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">{{ ctaKop }}</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(25px, 4vw, 34px); line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">{{ ctaKop }}</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">We denken vrijblijvend mee over de volgende stap voor jouw organisatie.</p>
       </div>
       <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>

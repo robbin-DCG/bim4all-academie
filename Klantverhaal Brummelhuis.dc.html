@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Klantverhaal Brummelhuis | BIM4ALL Academie</title>
 <meta name="description" content="Van traditioneel tekenen naar BIM: hoe Brummelhuis de stap naar de toekomst maakt.">
 <script src="./support.js"></script>
@@ -26,16 +26,16 @@
 </style>
 </helmet>
 
-<div data-screen-label="Klantverhaal Brummelhuis" style="min-width: 1280px; background: #1B2618;">
+<div data-screen-label="Klantverhaal Brummelhuis" style="overflow-x: clip; background: #1B2618;">
 
   <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
 
   <!-- Hero -->
-  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 70% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+  <div style="position: relative; padding: clamp(36px, 5.5vw, 64px) clamp(20px, 4.4vw, 56px) clamp(44px, 6.5vw, 80px) clamp(20px, 4.4vw, 56px); background: radial-gradient(ellipse 1000px 520px at 70% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 56px; align-items: center;">
     <div style="display: flex; flex-direction: column; gap: 22px;">
       <a href="Klantverhalen.dc.html" style="animation: fadeUp 0.7s ease 0.02s both; color: #8FA07E; font-weight: 600; font-size: 14px;" style-hover="color: #C9E265;">← Alle klantverhalen</a>
       <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Klantverhaal · Brummelhuis</span>
-      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 54px; line-height: 1.06; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Van traditioneel tekenen <span style="color: #C9E265;">naar BIM</span></h1>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: clamp(32px, 6vw, 54px); line-height: 1.06; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Van traditioneel tekenen <span style="color: #C9E265;">naar BIM</span></h1>
       <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">Brummelhuis ontwerpt en realiseert vrijstaande droomwoningen. Maar de markt vraagt om meer: modellen die ook in werkvoorbereiding en uitvoering waarde leveren. Samen richten we BIM structureel in.</p>
       <div style="animation: fadeUp 0.7s ease 0.32s both; border-left: 3px solid #C9E265; padding: 4px 0 4px 20px;">
         <p style="font-family: 'Sora', sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #E8EEDC; margin: 0; font-style: italic;">“De wereld om ons heen verandert. Dat vraagt andere competenties van onze mensen.”</p>
@@ -46,7 +46,7 @@
       <div style="height: 360px;">
         <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="brummelhuis-hero" src="assets/brummelhuis-overleg.jpeg" shape="rounded" radius="24" placeholder="Sleep hier een foto van Brummelhuis (woning of team)" hint-size="100%,100%"></x-import>
       </div>
-      <div style="background: #F4F4EC; border-radius: 16px; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+      <div style="background: #F4F4EC; border-radius: 16px; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
         <img src="assets/logo-brummelhuis.png" alt="Brummelhuis" style="height: 40px; object-fit: contain;">
         <span style="font-size: 14px; font-weight: 600; color: #55604C; text-align: right;">Vrijstaande woningen op maat · Deventer</span>
       </div>
@@ -54,13 +54,13 @@
   </div>
 
   <!-- Licht deel -->
-  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 88px 56px; display: flex; flex-direction: column; gap: 96px;">
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: clamp(48px, 7.5vw, 88px) clamp(20px, 4.4vw, 56px); display: flex; flex-direction: column; gap: 96px;">
 
     <!-- Situatie -->
-    <div data-reveal style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; max-width: 1180px; margin: 0 auto; width: 100%;">
+    <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 64px; align-items: start; max-width: 1180px; margin: 0 auto; width: 100%;">
       <div style="display: flex; flex-direction: column; gap: 18px; position: sticky; top: 100px;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">De startsituatie</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Een sterke 3D-basis, maar BIM nog geen werkwijze</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(27px, 4.4vw, 38px); line-height: 1.1; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Een sterke 3D-basis, maar BIM nog geen werkwijze</h2>
       </div>
       <div style="display: flex; flex-direction: column; gap: 18px;">
         <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">Brummelhuis werkte al met SketchUp en Revit en had daarmee een sterke basis in 3D-ontwerp. Maar de manier van werken verschilde per project en per medewerker: afspraken over modelopbouw, informatie en overdracht waren niet vastgelegd, en kennis zat vooral bij individuen in plaats van in processen.</p>
@@ -76,10 +76,10 @@
     <div style="display: flex; flex-direction: column; gap: 40px;">
       <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Onze aanpak</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Van inzicht naar een werkwijze die landt</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(28px, 4.6vw, 40px); line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Van inzicht naar een werkwijze die landt</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #55604C; margin: 0;">“We zijn eigenlijk gestart vanuit een bepaalde onwetendheid. Wat hebben we nodig en hoe pakken we dat aan?”</p>
       </div>
-      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px;">
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 20px;">
         <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;">
           <span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 1</span>
           <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Analyse van de werkwijze</span>
@@ -101,7 +101,7 @@
           <p style="font-size: 14px; line-height: 1.6; color: #B9C4AC; margin: 0;">Medewerkers actief meegenomen: inzicht in hun rol in het BIM-proces en begeleiding in het dagelijkse werk — versneld met de SLIM-subsidie.</p>
         </div>
       </div>
-      <div data-reveal style="background: #FFFFFF; border: 1px dashed rgba(63,87,65,0.35); border-radius: 20px; padding: 24px 32px; display: flex; align-items: center; gap: 24px; max-width: 900px; margin: 0 auto; width: 100%;">
+      <div data-reveal style="background: #FFFFFF; border: 1px dashed rgba(63,87,65,0.35); border-radius: 20px; padding: 24px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 18px 24px; max-width: 900px; margin: 0 auto;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; flex: 0 0 auto;">SLIM-subsidie</span>
         <p style="font-size: 15px; line-height: 1.55; color: #55604C; margin: 0;">Brummelhuis koppelt leren en ontwikkelen aan de dagelijkse praktijk met de SLIM-subsidie. Medewerkers denken mee in de analyse en krijgen gerichte ontwikkeladviezen.</p>
       </div>
@@ -111,10 +111,10 @@
     <div data-reveal style="background: radial-gradient(ellipse 640px 420px at 88% 0%, rgba(201,226,101,0.28), transparent 62%), repeating-linear-gradient(0deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), #3F5741; border-radius: 28px; padding: 56px; display: flex; flex-direction: column; gap: 36px;">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
         <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Resultaat · Eerste impact</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">De manier van denken verandert</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(27px, 4.4vw, 38px); line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">De manier van denken verandert</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #C9D4BC; margin: 0;">Het traject loopt nog, maar de eerste resultaten zijn duidelijk zichtbaar. Waar BIM eerst vooral een tool was, groeit het begrip voor BIM als werkmethodiek.</p>
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px;">
         <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;">
           <span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Energie &amp; eigenaarschap</span>
           <p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0; font-style: italic;">“Mensen zien kansen, zien uitdagingen en krijgen energie van de mogelijkheden die BIM biedt.”</p>
@@ -128,7 +128,7 @@
           <p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">Betere samenwerking met partners door meer inzicht in informatiebehoefte en overdracht binnen de keten.</p>
         </div>
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 24px; align-items: stretch;">
         <div style="height: 300px;">
           <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="brummelhuis-resultaat" src="assets/brummelhuis-revit.jpeg" shape="rounded" radius="16" placeholder="Foto" hint-size="100%,100%"></x-import>
         </div>
@@ -147,13 +147,13 @@
     </div>
 
     <!-- Stip op de horizon + grote quote -->
-    <div data-reveal style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center; max-width: 1180px; margin: 0 auto; width: 100%;">
+    <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 56px; align-items: center; max-width: 1180px; margin: 0 auto; width: 100%;">
       <div style="height: 460px;">
         <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="brummelhuis-portret" src="assets/brummelhuis-martijn.jpeg" shape="rounded" radius="24" placeholder="Portret Martijn Roosien" hint-size="100%,100%"></x-import>
       </div>
       <div style="display: flex; flex-direction: column; gap: 18px;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Stip op de horizon</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">“BIM is straks geen vraag meer, maar een vereiste. Het wordt de standaard.”</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(26px, 4.2vw, 36px); line-height: 1.1; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">“BIM is straks geen vraag meer, maar een vereiste. Het wordt de standaard.”</h2>
         <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">Het doel: een organisatie waarin BIM en digitalisering geen los project zijn, maar vanzelfsprekend onderdeel van de dagelijkse werkwijze. Processen helder ingericht, afspraken vastgelegd, modellen betrouwbaar en overdraagbaar richting partners in de keten.</p>
         <div style="border-left: 3px solid #A6C934; padding: 4px 0 4px 20px; display: flex; flex-direction: column; gap: 6px;">
           <p style="font-family: 'Sora', sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #22301F; margin: 0; font-style: italic;">“BIM is de toekomst. Ga ermee aan de slag op een manier die past bij jouw organisatie en mensen. Afwachten is geen optie.”</p>
@@ -163,9 +163,9 @@
     </div>
 
     <!-- CTA -->
-    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: clamp(28px, 4.6vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px;">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Klaar om de volgende stap te zetten met BIM?</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(26px, 4.2vw, 36px); line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Klaar om de volgende stap te zetten met BIM?</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Wij brengen er structuur in aan — van eerste inzicht tot implementatie in je organisatie. Vaak met SLIM-subsidie.</p>
       </div>
       <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>

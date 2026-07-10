@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Online leren | BIM4ALL Academie</title>
 <meta name="description" content="Flexibel leren met praktijkgerichte online modules — waar en wanneer het jou uitkomt.">
 <script src="./support.js"></script>
@@ -27,17 +27,17 @@
 </style>
 </helmet>
 
-<div data-screen-label="Online leren" style="min-width: 1280px; background: #1B2618;">
+<div data-screen-label="Online leren" style="overflow-x: clip; background: #1B2618;">
 
   <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
 
   <!-- Hero -->
-  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+  <div style="position: relative; padding: clamp(36px, 5.5vw, 64px) clamp(20px, 4.4vw, 56px) clamp(44px, 6.5vw, 80px) clamp(20px, 4.4vw, 56px); background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 56px; align-items: center;">
     <div style="display: flex; flex-direction: column; gap: 24px;">
       <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Leeraanbod · Online</span>
-      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Leren in je <span style="color: #C9E265;">eigen tempo</span></h1>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: clamp(35px, 6.6vw, 60px); line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Leren in je <span style="color: #C9E265;">eigen tempo</span></h1>
       <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">Geef niet alleen invulling aan de opleidingsbehoefte, maar bouw aan een lerende cultuur waarin mensen centraal staan. Waar en wanneer het jou uitkomt.</p>
-      <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; align-items: center; gap: 14px;">
+      <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
         <a href="Contact.dc.html" style="background: #C9E265; color: #1B2618; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="background: #D8EE7E;">Vraag een demo aan</a>
         <a href="Klassikaal leren.dc.html" style="border: 1px solid rgba(244,244,236,0.35); color: #F4F4EC; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="border-color: #C9E265; color: #C9E265;">Liever klassikaal?</a>
       </div>
@@ -48,16 +48,16 @@
   </div>
 
   <!-- Licht deel -->
-  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 88px;">
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: clamp(40px, 6vw, 72px) clamp(20px, 4.4vw, 56px); display: flex; flex-direction: column; gap: 88px;">
 
     <!-- Soorten modules -->
     <div style="display: flex; flex-direction: column; gap: 48px;">
       <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Modules</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Verschillende soorten modules, één leeromgeving</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(29px, 5vw, 44px); line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Verschillende soorten modules, één leeromgeving</h2>
         <p style="font-size: 18px; line-height: 1.55; color: #55604C; margin: 0;">Korte, praktijkgerichte modules die je los volgt of combineert in een leertraject — vaak als onderdeel van een blended aanpak met klassikale dagen.</p>
       </div>
-      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px;">
         <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
           <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">01</span>
           <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">Kennismodules</h3>
@@ -81,14 +81,14 @@
       <div data-reveal style="display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; flex-wrap: wrap;">
         <div style="display: flex; flex-direction: column; gap: 12px;">
           <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Leeromgeving</span>
-          <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Een greep uit onze modules</h2>
+          <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(29px, 5vw, 44px); line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Een greep uit onze modules</h2>
         </div>
         <div style="display: flex; gap: 12px;">
           <a href="Contact.dc.html" style="border: 1px solid rgba(63,87,65,0.3); color: #3F5741; padding: 12px 26px; border-radius: 999px; font-weight: 700; font-size: 15px;" style-hover="border-color: #3F5741; background: #FFFFFF;">Vraag demo aan</a>
           <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 12px 26px; border-radius: 999px; font-weight: 700; font-size: 15px;" style-hover="background: #B02377;">Inloggen</a>
         </div>
       </div>
-      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 20px;">
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 20px;">
         <sc-for list="{{ zichtbareModules }}" as="m" hint-placeholder-count="4">
           <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; overflow: hidden; display: flex; flex-direction: column;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
             <div style="height: 110px; background: {{ m.vlak }}; display: flex; align-items: center; justify-content: center; color: {{ m.vlakTekst }};">{{ m.icoon }}</div>
@@ -99,7 +99,7 @@
           </div>
         </sc-for>
       </div>
-      <div style="display: flex; align-items: center; justify-content: center; gap: 20px;">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 20px;">
         <span onClick="{{ modVorige }}" style="width: 44px; height: 44px; border-radius: 999px; border: 1px solid rgba(63,87,65,0.3); color: #3F5741; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; cursor: pointer; user-select: none;" style-hover="background: #FFFFFF; border-color: #3F5741;">‹</span>
         <div style="display: flex; gap: 8px;">
           <sc-for list="{{ modDots }}" as="d" hint-placeholder-count="3">
@@ -114,9 +114,9 @@
     </div>
 
     <!-- Voordelen / blended -->
-    <div data-reveal style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 56px; align-items: center;">
+    <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 56px; align-items: center;">
       <div style="background: #C9E265; border-radius: 28px; padding: 48px; display: flex; flex-direction: column; gap: 20px;">
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #22301F; margin: 0;">Sterkst als blend</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(26px, 4.2vw, 36px); line-height: 1.1; font-weight: 800; color: #22301F; margin: 0;">Sterkst als blend</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #44532B; margin: 0;">Online modules als voorbereiding, klassikale dagen voor verdieping en oefening. Zo leer je sneller en beklijft het beter.</p>
         <a href="Klassikaal leren.dc.html" style="background: #22301F; color: #C9E265; padding: 13px 26px; border-radius: 999px; font-weight: 700; font-size: 16px; align-self: flex-start;">Ontdek klassikaal leren <span data-arrow="r">→</span></a>
       </div>
@@ -130,13 +130,13 @@
     </div>
 
     <!-- CTA -->
-    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: clamp(28px, 4.6vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px;">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Zien hoe de leeromgeving werkt?</h2>
-        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Vraag een demo aan en ontdek welke modules passen bij jouw team.</p>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(26px, 4.2vw, 36px); line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Zien hoe de leeromgeving werkt?</h2>
+        <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Vraag een demo aan en ontdek welke modules passen bij jouw team. Het aanbod groeit continu mee met nieuwe techniek en de vraag uit de praktijk.</p>
       </div>
-      <div style="display: flex; align-items: center; gap: 24px; flex: 0 0 auto;">
-        <div style="background: rgba(244,244,236,0.08); border: 1px solid rgba(201,226,101,0.25); border-radius: 18px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px;">
+        <div style="background: rgba(244,244,236,0.08); border: 1px solid rgba(201,226,101,0.25); border-radius: 18px; padding: 16px 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
           <img src="assets/team-melvin.png" alt="Melvin van Puffelen" style="width: 56px; height: 56px; border-radius: 14px; object-fit: cover; display: block;">
           <div style="display: flex; flex-direction: column; gap: 2px;">
             <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 16px; color: #F4F4EC;">Melvin van Puffelen</span>

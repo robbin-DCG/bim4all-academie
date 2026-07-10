@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Kenniscentrum | BIM4ALL Academie</title>
 <meta name="description" content="Artikelen, gidsen en praktijkkennis over BIM, digitalisering en AI in de bouw. Gratis en zonder jargon.">
 <script src="./support.js"></script>
@@ -27,14 +27,14 @@
 </style>
 </helmet>
 
-<div data-screen-label="Kenniscentrum" style="min-width: 1280px; background: #1B2618;">
+<div data-screen-label="Kenniscentrum" style="overflow-x: clip; background: #1B2618;">
 
   <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
 
   <!-- Hero -->
-  <div style="position: relative; padding: 64px 56px 72px 56px; background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 24px; align-items: center; text-align: center;">
+  <div style="position: relative; padding: clamp(36px, 5.5vw, 64px) clamp(20px, 4.4vw, 56px) clamp(40px, 6vw, 72px) clamp(20px, 4.4vw, 56px); background: radial-gradient(ellipse 1000px 520px at 50% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: flex; flex-direction: column; gap: 24px; align-items: center; text-align: center;">
     <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6);">Kenniscentrum</span>
-    <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 860px; text-wrap: pretty;">Kennis om <span style="color: #C9E265;">direct mee verder</span> te kunnen</h1>
+    <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: clamp(35px, 6.6vw, 60px); line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; max-width: 860px; text-wrap: pretty;">Kennis om <span style="color: #C9E265;">direct mee verder</span> te kunnen</h1>
     <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 620px;">Artikelen, gidsen en praktijkkennis over BIM, digitalisering en AI in de bouw. Gratis, nuchter en zonder jargon.</p>
     <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
       <sc-for list="{{ themas }}" as="t" hint-placeholder-count="4">
@@ -44,10 +44,10 @@
   </div>
 
   <!-- Licht deel -->
-  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 64px;">
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: clamp(40px, 6vw, 72px) clamp(20px, 4.4vw, 56px); display: flex; flex-direction: column; gap: 64px;">
 
     <!-- Artikelen -->
-    <div data-reveal style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+    <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px;">
       <sc-for list="{{ artikelen }}" as="a" hint-placeholder-count="6">
         <a href="{{ a.href }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 14px; cursor: pointer; color: inherit;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
           <div style="display: flex; align-items: center; gap: 10px;">
@@ -62,12 +62,12 @@
     </div>
 
     <!-- Nieuwsbrief CTA -->
-    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: clamp(28px, 4.6vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px;">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 560px;">
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Nieuwe kennis direct in je inbox</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(26px, 4.2vw, 36px); line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Nieuwe kennis direct in je inbox</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Meld je aan voor de nieuwsbrief en mis geen artikel.</p>
       </div>
-      <div style="display: flex; gap: 10px; flex: 0 0 auto;">
+      <div style="display: flex; flex-wrap: wrap; gap: 10px;">
         <span style="background: rgba(0,0,0,0.3); border: 1px solid rgba(201,226,101,0.22); border-radius: 999px; padding: 13px 24px; color: #8B937E; font-size: 15px; min-width: 220px;">E-mail *</span>
         <span style="background: #C9E265; color: #1B2618; padding: 13px 26px; border-radius: 999px; font-weight: 700; font-size: 15px; cursor: pointer;" style-hover="background: #D8EE7E;">Aanmelden</span>
       </div>

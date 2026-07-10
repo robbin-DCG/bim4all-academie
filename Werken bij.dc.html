@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Werken bij | BIM4ALL Academie</title>
 <meta name="description" content="Bouw mee aan de slimste bouwsector van Europa. Bekijk onze vacatures en stages.">
 <script src="./support.js"></script>
@@ -27,17 +27,17 @@
 </style>
 </helmet>
 
-<div data-screen-label="Werken bij" style="min-width: 1280px; background: #1B2618;">
+<div data-screen-label="Werken bij" style="overflow-x: clip; background: #1B2618;">
 
   <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
 
   <!-- Hero -->
-  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+  <div style="position: relative; padding: clamp(36px, 5.5vw, 64px) clamp(20px, 4.4vw, 56px) clamp(44px, 6.5vw, 80px) clamp(20px, 4.4vw, 56px); background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 56px; align-items: center;">
     <div style="display: flex; flex-direction: column; gap: 24px;">
       <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Werken bij BIM4ALL Academie</span>
-      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 60px; line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Bouw mee aan de <span style="color: #C9E265;">slimste bouwsector</span> van Europa</h1>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: clamp(35px, 6.6vw, 60px); line-height: 1.05; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Bouw mee aan de <span style="color: #C9E265;">slimste bouwsector</span> van Europa</h1>
       <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">Bij ons help je bouwbedrijven vooruit met kennis, strategie en AI. Als onderdeel van Digital Construction Group werk je met 60+ collega's aan projecten die de sector veranderen — met korte lijnen en elke dag ruimte om zelf te blijven leren.</p>
-      <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; align-items: center; gap: 14px;">
+      <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
         <span onClick="{{ scrollVacatures }}" style="background: #C9E265; color: #1B2618; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; cursor: pointer;" style-hover="background: #D8EE7E;">Bekijk vacatures</span>
         <a href="Contact.dc.html" style="border: 1px solid rgba(244,244,236,0.35); color: #F4F4EC; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; cursor: pointer;" style-hover="border-color: #C9E265; color: #C9E265;">Kom kennismaken</a>
       </div>
@@ -52,16 +52,16 @@
   </div>
 
   <!-- Licht deel -->
-  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 72px 56px; display: flex; flex-direction: column; gap: 88px;">
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: clamp(40px, 6vw, 72px) clamp(20px, 4.4vw, 56px); display: flex; flex-direction: column; gap: 88px;">
 
     <!-- Waarom werken bij -->
     <div style="display: flex; flex-direction: column; gap: 48px;">
       <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Waarom BIM4ALL Academie</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Werk dat er echt toe doet</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(29px, 5vw, 44px); line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Werk dat er echt toe doet</h2>
         <p style="font-size: 18px; line-height: 1.55; color: #55604C; margin: 0;">De bouw digitaliseert in hoog tempo. Jij staat vooraan: je helpt mensen groeien, organisaties veranderen en AI landen in de praktijk.</p>
       </div>
-      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+      <div data-reveal data-reveal-delay="120" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px;">
         <div style="background: #FFFFFF; border-radius: 24px; padding: 36px 32px; display: flex; flex-direction: column; gap: 16px; border: 1px solid rgba(63,87,65,0.08);" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10);">
           <span style="width: 52px; height: 52px; border-radius: 16px; background: #22301F; color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 17px; font-weight: 700; font-family: 'Sora', sans-serif;">01</span>
           <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">Impact vanaf dag één</h3>
@@ -81,19 +81,19 @@
     </div>
 
     <!-- Cultuur / foto's -->
-    <div data-reveal style="background: radial-gradient(ellipse 480px 360px at 12% 100%, rgba(255,255,255,0.35), transparent 60%), #C9E265; border-radius: 28px; padding: 56px; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 48px; align-items: center;">
+    <div data-reveal style="background: radial-gradient(ellipse 480px 360px at 12% 100%, rgba(255,255,255,0.35), transparent 60%), #C9E265; border-radius: 28px; padding: 56px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 48px; align-items: center;">
       <div style="display: flex; flex-direction: column; gap: 18px;">
         <span style="background: #22301F; color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Onze cultuur</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #22301F; margin: 0;">Nuchter, nieuwsgierig en samen</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(27px, 4.4vw, 38px); line-height: 1.1; font-weight: 800; color: #22301F; margin: 0;">Nuchter, nieuwsgierig en samen</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #44532B; margin: 0;">Wij komen uit de bouwpraktijk en houden van aanpakken. Korte lijnen, humor op de werkvloer en successen vieren we samen — net als de lessen uit dingen die mislukken.</p>
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px 20px;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 10px 20px;">
           <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #33401E;"><span style="color: #3F5741;">✓</span>Hybride &amp; flexibel</span>
           <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #33401E;"><span style="color: #3F5741;">✓</span>Opleidingsbudget</span>
           <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #33401E;"><span style="color: #3F5741;">✓</span>Nieuwste AI-tools</span>
           <span style="display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; color: #33401E;"><span style="color: #3F5741;">✓</span>Teamuitjes &amp; sessies</span>
         </div>
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; gap: 14px; height: 420px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); grid-template-rows: 1fr 1fr; gap: 14px; height: 420px;">
         <div style="grid-row: span 2;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="cultuur-1" src="assets/sfeer-vergadering.jpeg" shape="rounded" radius="18" placeholder="Sfeerfoto" hint-size="100%,100%"></x-import></div>
         <div><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="cultuur-2" src="assets/sfeer-darts-borrel.jpeg" shape="rounded" radius="18" placeholder="Sfeerfoto" hint-size="100%,100%"></x-import></div>
         <div><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="cultuur-3" src="assets/sfeer-strand.png" shape="rounded" radius="18" placeholder="Sfeerfoto" hint-size="100%,100%"></x-import></div>
@@ -104,23 +104,23 @@
     <div id="vacatures" style="display: flex; flex-direction: column; gap: 32px;">
       <div data-reveal style="display: flex; flex-direction: column; gap: 16px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Vacatures</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 44px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Open posities</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(29px, 5vw, 44px); line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Open posities</h2>
       </div>
       <div data-reveal data-reveal-delay="120" style="display: flex; flex-direction: column; gap: 16px; max-width: 960px; width: 100%; margin: 0 auto;">
         <sc-for list="{{ vacatures }}" as="vac" hint-placeholder-count="3">
-          <a href="{{ vac.link }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px 32px; display: flex; align-items: center; gap: 28px; cursor: pointer; color: inherit;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10); border-color: rgba(166,201,52,0.5);">
+          <a href="{{ vac.link }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px 32px; display: flex; flex-wrap: wrap; align-items: center; gap: 20px 28px; cursor: pointer; color: inherit;" style-hover="box-shadow: 0 8px 28px rgba(34,48,31,0.10); border-color: rgba(166,201,52,0.5);">
             <div style="display: flex; flex-direction: column; gap: 6px; flex: 1;">
               <h3 style="font-family: 'Sora', sans-serif; font-size: 22px; font-weight: 700; color: #22301F; margin: 0;">{{ vac.titel }}</h3>
               <p style="font-size: 15px; line-height: 1.5; color: #55604C; margin: 0;">{{ vac.omschrijving }}</p>
             </div>
-            <div style="display: flex; gap: 10px; flex: 0 0 auto;">
+            <div style="display: flex; flex-wrap: wrap; gap: 10px;">
               <span style="background: #E8F0C8; color: #4A6318; font-size: 13px; font-weight: 700; padding: 6px 14px; border-radius: 999px; white-space: nowrap;">{{ vac.uren }}</span>
               <span style="background: #F4F4EC; color: #55604C; font-size: 13px; font-weight: 700; padding: 6px 14px; border-radius: 999px; white-space: nowrap;">{{ vac.locatie }}</span>
             </div>
             <span style="color: #5A7A2E; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;">Bekijk <span data-arrow="r">→</span></span>
           </a>
         </sc-for>
-        <div style="background: transparent; border: 1px dashed rgba(63,87,65,0.35); border-radius: 20px; padding: 24px 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
+        <div style="background: transparent; border: 1px dashed rgba(63,87,65,0.35); border-radius: 20px; padding: 24px 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 24px;">
           <p style="font-size: 16px; line-height: 1.55; color: #55604C; margin: 0;">Staat jouw functie er niet tussen, maar geloof je dat je ons sterker maakt? Overtuig ons met een open sollicitatie.</p>
           <a href="Contact.dc.html" style="color: #5A7A2E; font-weight: 700; font-size: 16px; white-space: nowrap;">Open sollicitatie <span data-arrow="r">→</span></a>
         </div>
@@ -131,9 +131,9 @@
     <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; flex-direction: column; gap: 40px;">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
         <span style="background: #C9E265; color: #22301F; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Zo solliciteer je</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0;">Van koffie tot contract in drie stappen</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(28px, 4.6vw, 40px); line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0;">Van koffie tot contract in drie stappen</h2>
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px;">
         <div style="background: rgba(244,244,236,0.06); border: 1px solid rgba(201,226,101,0.25); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 12px;">
           <span style="width: 44px; height: 44px; border-radius: 14px; background: #C9E265; color: #22301F; display: inline-flex; align-items: center; justify-content: center; font-size: 15px; font-weight: 700; font-family: 'Sora', sans-serif;">01</span>
           <div style="font-weight: 700; font-size: 18px; color: #F4F4EC;">Kennismaken</div>
@@ -150,12 +150,12 @@
           <div style="font-size: 15px; color: #B9C4AC; line-height: 1.55;">Voorstel op maat en een warm onboardingsprogramma. Binnen twee weken sta jij vooraan.</div>
         </div>
       </div>
-      <div style="display: flex; align-items: center; justify-content: space-between; gap: 24px; flex-wrap: wrap;">
-        <div style="display: flex; align-items: center; gap: 14px;">
+      <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 24px; flex-wrap: wrap;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
           <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 13px 26px; border-radius: 999px; font-weight: 700; font-size: 16px;" style-hover="background: #B02377;">Solliciteer direct</a>
           <span style="font-size: 15px; color: #B9C4AC;">Binnen 3 werkdagen reactie, altijd.</span>
         </div>
-        <div style="background: rgba(244,244,236,0.08); border: 1px solid rgba(201,226,101,0.25); border-radius: 18px; padding: 14px 20px; display: flex; align-items: center; gap: 14px;">
+        <div style="background: rgba(244,244,236,0.08); border: 1px solid rgba(201,226,101,0.25); border-radius: 18px; padding: 14px 20px; display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
           <img src="assets/team-celeste.png" alt="Celeste Kienhuis" style="width: 52px; height: 52px; border-radius: 14px; object-fit: cover; object-position: top; display: block;">
           <div style="display: flex; flex-direction: column; gap: 1px;">
             <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 15px; color: #F4F4EC;">Celeste Kienhuis · HR-manager</span>

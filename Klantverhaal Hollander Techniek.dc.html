@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Klantverhaal Hollander Techniek | BIM4ALL Academie</title>
 <meta name="description" content="Verder bouwen aan digitale samenwerking binnen Cluster Retail.">
 <script src="./support.js"></script>
@@ -26,16 +26,16 @@
 </style>
 </helmet>
 
-<div data-screen-label="Klantverhaal Hollander Techniek" style="min-width: 1280px; background: #1B2618;">
+<div data-screen-label="Klantverhaal Hollander Techniek" style="overflow-x: clip; background: #1B2618;">
 
   <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
 
   <!-- Hero -->
-  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 70% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center;">
+  <div style="position: relative; padding: clamp(36px, 5.5vw, 64px) clamp(20px, 4.4vw, 56px) clamp(44px, 6.5vw, 80px) clamp(20px, 4.4vw, 56px); background: radial-gradient(ellipse 1000px 520px at 70% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 56px; align-items: center;">
     <div style="display: flex; flex-direction: column; gap: 22px;">
       <a href="Klantverhalen.dc.html" style="animation: fadeUp 0.7s ease 0.02s both; color: #8FA07E; font-weight: 600; font-size: 14px;" style-hover="color: #C9E265;">← Alle klantverhalen</a>
       <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Klantverhaal · Hollander Techniek</span>
-      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 50px; line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Verder bouwen aan <span style="color: #C9E265;">digitale samenwerking</span></h1>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: clamp(31px, 5.6vw, 50px); line-height: 1.08; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Verder bouwen aan <span style="color: #C9E265;">digitale samenwerking</span></h1>
       <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 520px;">Van BIM-toepassing naar een toekomstbestendige manier van samenwerken. Binnen het Cluster Retail werkt Hollander Techniek dagelijks aan technische installaties voor grote retailorganisaties in Nederland en België.</p>
       <div style="animation: fadeUp 0.7s ease 0.32s both; border-left: 3px solid #C9E265; padding: 4px 0 4px 20px;">
         <p style="font-family: 'Sora', sans-serif; font-size: 18px; line-height: 1.5; font-weight: 600; color: #E8EEDC; margin: 0; font-style: italic;">“Digitalisering is geen doel op zich, maar een manier om processen slimmer in te richten, kwaliteit te verhogen en nieuwe klantwaarde te creëren.”</p>
@@ -46,7 +46,7 @@
       <div style="height: 360px;">
         <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="hollander-hero" src="assets/hollander-pand.jpeg" shape="rounded" radius="24" placeholder="Sleep hier een foto van Hollander Techniek" hint-size="100%,100%"></x-import>
       </div>
-      <div style="background: #F4F4EC; border-radius: 16px; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+      <div style="background: #F4F4EC; border-radius: 16px; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
         <img src="assets/logo-hollander-kleur.png" alt="Hollander Techniek" style="height: 36px; object-fit: contain;">
         <span style="font-size: 14px; font-weight: 600; color: #55604C; text-align: right;">Opgericht in 1974 · 600+ medewerkers · utiliteit, industrie en retail</span>
       </div>
@@ -54,13 +54,13 @@
   </div>
 
   <!-- Licht deel -->
-  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: 88px 56px; display: flex; flex-direction: column; gap: 96px;">
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; border-radius: 32px 32px 0 0; padding: clamp(48px, 7.5vw, 88px) clamp(20px, 4.4vw, 56px); display: flex; flex-direction: column; gap: 96px;">
 
     <!-- Uitdaging -->
-    <div data-reveal style="display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 64px; align-items: start; max-width: 1180px; margin: 0 auto; width: 100%;">
+    <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 64px; align-items: start; max-width: 1180px; margin: 0 auto; width: 100%;">
       <div style="display: flex; flex-direction: column; gap: 18px; position: sticky; top: 100px;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">De uitdaging</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">BIM werd toegepast, maar nog niet overal op dezelfde manier</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(27px, 4.4vw, 38px); line-height: 1.1; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">BIM werd toegepast, maar nog niet overal op dezelfde manier</h2>
       </div>
       <div style="display: flex; flex-direction: column; gap: 18px;">
         <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">Teams werkten verschillend, kennisniveaus liepen uiteen en processen waren onvoldoende gestandaardiseerd. Daardoor ontstonden verschillen in modelkwaliteit, inefficiëntie in projecten en miscommunicatie tussen disciplines.</p>
@@ -75,9 +75,9 @@
     <div style="display: flex; flex-direction: column; gap: 40px;">
       <div data-reveal style="display: flex; flex-direction: column; gap: 14px; max-width: 760px; margin: 0 auto; text-align: center; align-items: center;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Onze aanpak</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Samen bouwen aan structuur en ontwikkeling</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(28px, 4.6vw, 40px); line-height: 1.08; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">Samen bouwen aan structuur en ontwikkeling</h2>
       </div>
-      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px;">
+      <div data-reveal data-reveal-delay="100" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 20px;">
         <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 1</span><span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Analyse van de huidige situatie</span><p style="font-size: 14px; line-height: 1.6; color: #55604C; margin: 0;">Processen, werkwijzen, kennisniveau en de toepassing van BIM in projecten in kaart gebracht — de basis voor een duidelijke ontwikkelrichting.</p></div>
         <div style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.08); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #A6C934;">STAP 2</span><span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #22301F;">Standaardisatie & samenwerking</span><p style="font-size: 14px; line-height: 1.6; color: #55604C; margin: 0;">BIM-processen verbeterd, meer standaardisatie aangebracht en de samenwerking tussen disciplines versterkt — direct toegepast in lopende projecten.</p></div>
         <div style="background: radial-gradient(ellipse 300px 200px at 85% 0%, rgba(166,201,52,0.30), transparent 65%), #22301F; border-radius: 20px; padding: 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-family: 'Sora', sans-serif; font-weight: 800; font-size: 15px; color: #C9E265;">STAP 3</span><span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 18px; color: #F4F4EC;">Kennisontwikkeling & draagvlak</span><p style="font-size: 14px; line-height: 1.6; color: #B9C4AC; margin: 0;">Inspiratiesessies, werkgroepen en praktijkgerichte trainingen in BIM, Revit en Dynamo. Leren gekoppeld aan de dagelijkse praktijk.</p></div>
@@ -88,37 +88,37 @@
     <div data-reveal style="background: radial-gradient(ellipse 640px 420px at 88% 0%, rgba(201,226,101,0.28), transparent 62%), repeating-linear-gradient(0deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.05) 0px, rgba(201,226,101,0.05) 1px, transparent 1px, transparent 64px), #3F5741; border-radius: 28px; padding: 56px; display: flex; flex-direction: column; gap: 36px;">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 760px;">
         <span style="background: rgba(201,226,101,0.16); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">Resultaat</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 38px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Consistentere processen, betere modellen, meer vertrouwen</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(27px, 4.4vw, 38px); line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Consistentere processen, betere modellen, meer vertrouwen</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #C9D4BC; margin: 0;">Processen verlopen consistenter en de samenwerking tussen disciplines is verbeterd doordat informatie beter wordt afgestemd en gedeeld. De kwaliteit van modellen en documentatie is toegenomen.</p>
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 24px;">
         <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Kwaliteit & efficiëntie</span><p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">“Processen en modellen worden continu verbeterd, wat leidt tot hogere kwaliteit en meer efficiëntie in onze projecten.”</p></div>
         <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Vertrouwen in het team</span><p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">“Medewerkers voelen zich beter toegerust en hebben meer vertrouwen in het werken met BIM.”</p></div>
         <div style="background: rgba(244,244,236,0.07); border-radius: 16px; padding: 26px 28px; display: flex; flex-direction: column; gap: 10px;"><span style="font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #C9E265;">Partnerschap</span><p style="font-size: 15px; line-height: 1.6; color: #E8EEDC; margin: 0;">“Het voelt als een partnerschap in plaats van een traditionele leveranciersrelatie.”</p></div>
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 24px;">
         <div style="height: 280px;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="hollander-foto-1" src="assets/hollander-kantoor.jpeg" shape="rounded" radius="16" placeholder="Foto" hint-size="100%,100%"></x-import></div>
         <div style="height: 280px;"><x-import component-from-global-scope="image-slot" from="./image-slot.js" id="hollander-foto-2" src="assets/hollander-gesprek.jpeg" shape="rounded" radius="16" placeholder="Foto" hint-size="100%,100%"></x-import></div>
       </div>
     </div>
 
     <!-- Grote quote -->
-    <div data-reveal style="display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 56px; align-items: center; max-width: 1180px; margin: 0 auto; width: 100%;">
+    <div data-reveal style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 56px; align-items: center; max-width: 1180px; margin: 0 auto; width: 100%;">
       <div style="height: 440px;">
         <x-import component-from-global-scope="image-slot" from="./image-slot.js" id="hollander-portret" src="assets/hollander-mark.jpeg" shape="rounded" radius="24" placeholder="Portret Mark Schuijer" hint-size="100%,100%"></x-import>
       </div>
       <div style="display: flex; flex-direction: column; gap: 18px;">
         <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; align-self: flex-start;">De ambitie</span>
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 34px; line-height: 1.2; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">“We spreken elkaar. We dagen elkaar uit en jullie helpen de behoefte die wij hebben te vertalen naar concrete acties voor implementaties.”</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(25px, 4vw, 34px); line-height: 1.2; font-weight: 800; color: #22301F; margin: 0; text-wrap: pretty;">“We spreken elkaar. We dagen elkaar uit en jullie helpen de behoefte die wij hebben te vertalen naar concrete acties voor implementaties.”</h2>
         <span style="font-size: 15px; font-weight: 600; color: #8B937E;">Mark Schuijer · Consultant Business Development, Hollander Techniek</span>
         <p style="font-size: 17px; line-height: 1.7; color: #3F5741; margin: 0;">De ambitie is helder: een organisatie waarin BIM en digitalisering vanzelfsprekend onderdeel zijn van processen, samenwerking en dienstverlening. Met verdere standaardisatie, kennisontwikkeling en de stap richting 4D- en 5D-BIM.</p>
       </div>
     </div>
 
     <!-- CTA -->
-    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: 56px; display: flex; align-items: center; justify-content: space-between; gap: 48px;">
+    <div data-reveal style="background: radial-gradient(ellipse 700px 400px at 12% 0%, rgba(166,201,52,0.26), transparent 60%), repeating-linear-gradient(0deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.04) 0px, rgba(201,226,101,0.04) 1px, transparent 1px, transparent 64px), #22301F; border-radius: 28px; padding: clamp(28px, 4.6vw, 56px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px;">
       <div style="display: flex; flex-direction: column; gap: 14px; max-width: 640px;">
-        <h2 style="font-family: 'Sora', sans-serif; font-size: 36px; line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Benieuwd wat wij voor jouw organisatie kunnen betekenen?</h2>
+        <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(26px, 4.2vw, 36px); line-height: 1.1; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Benieuwd wat wij voor jouw organisatie kunnen betekenen?</h2>
         <p style="font-size: 17px; line-height: 1.6; color: #B9C4AC; margin: 0;">Onze consultants vertalen strategische vraagstukken naar praktische oplossingen — voor processen, mensen en projecten.</p>
       </div>
       <a href="Contact.dc.html" style="background: #CC2E8B; color: #FFFFFF; padding: 14px 30px; border-radius: 999px; font-weight: 700; font-size: 16px; white-space: nowrap; flex: 0 0 auto;" style-hover="background: #B02377;">Plan een kennismaking</a>

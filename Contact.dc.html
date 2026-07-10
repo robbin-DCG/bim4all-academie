@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=1280">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Contact | BIM4ALL Academie</title>
 <meta name="description" content="Plan een kennismaking of stel je vraag — binnen één werkdag reactie.">
 <script src="./support.js"></script>
@@ -28,26 +28,26 @@
 </style>
 </helmet>
 
-<div data-screen-label="Contact" style="min-width: 1280px; background: #1B2618;">
+<div data-screen-label="Contact" style="overflow-x: clip; background: #1B2618;">
 
   <dc-import name="Nav" style="position: sticky; top: 0; z-index: 100;" hint-size="100%,76px"></dc-import>
 
   <!-- Hero + form -->
-  <div style="position: relative; padding: 64px 56px 80px 56px; background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 64px; align-items: start;">
+  <div style="position: relative; padding: clamp(36px, 5.5vw, 64px) clamp(20px, 4.4vw, 56px) clamp(44px, 6.5vw, 80px) clamp(20px, 4.4vw, 56px); background: radial-gradient(ellipse 1000px 520px at 75% 0%, rgba(166,201,52,0.20), transparent 65%), repeating-linear-gradient(0deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), repeating-linear-gradient(90deg, rgba(201,226,101,0.045) 0px, rgba(201,226,101,0.045) 1px, transparent 1px, transparent 64px), #1B2618; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 64px; align-items: start;">
     <div style="display: flex; flex-direction: column; gap: 24px; padding-top: 24px;">
       <span style="animation: fadeUp 0.7s ease 0.05s both; border: 1px solid rgba(201,226,101,0.4); color: #C9E265; font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 7px 16px; border-radius: 999px; background: rgba(27,38,24,0.6); align-self: flex-start;">Contact</span>
-      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: 56px; line-height: 1.06; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Laten we <span style="color: #C9E265;">kennismaken</span></h1>
+      <h1 style="animation: fadeUp 0.7s ease 0.15s both; font-family: 'Sora', sans-serif; font-size: clamp(33px, 6.2vw, 56px); line-height: 1.06; font-weight: 800; color: #F4F4EC; margin: 0; text-wrap: pretty;">Laten we <span style="color: #C9E265;">kennismaken</span></h1>
       <p style="animation: fadeUp 0.7s ease 0.25s both; font-size: 19px; line-height: 1.55; color: #AAB69B; margin: 0; max-width: 460px;">Vraag over ons leeraanbod, consulting of AI? Stuur een bericht of bel ons — we reageren binnen één werkdag.</p>
       <div style="animation: fadeUp 0.7s ease 0.35s both; display: flex; flex-direction: column; gap: 16px;">
-        <div style="display: flex; align-items: center; gap: 14px;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
           <span style="width: 44px; height: 44px; border-radius: 14px; background: rgba(201,226,101,0.14); color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto;">✉</span>
           <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6E7A61;">E-mail</div><div style="font-size: 17px; font-weight: 600; color: #F4F4EC;">info.academie@bim4all.com</div></div>
         </div>
-        <div style="display: flex; align-items: center; gap: 14px;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
           <span style="width: 44px; height: 44px; border-radius: 14px; background: rgba(201,226,101,0.14); color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto;">✆</span>
           <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6E7A61;">Telefoon</div><div style="font-size: 17px; font-weight: 600; color: #F4F4EC;">0548 - 37 67 97</div></div>
         </div>
-        <div style="display: flex; align-items: center; gap: 14px;">
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 14px;">
           <span style="width: 44px; height: 44px; border-radius: 14px; background: rgba(201,226,101,0.14); color: #C9E265; display: inline-flex; align-items: center; justify-content: center; font-size: 18px; flex: 0 0 auto;">⌂</span>
           <div><div style="font-size: 13px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: #6E7A61;">Bezoekadres</div><div style="font-size: 17px; font-weight: 600; color: #F4F4EC;">Nijverdalseweg 133, 7461 AG Rijssen</div></div>
         </div>
@@ -65,11 +65,11 @@
     <!-- Formulier -->
     <div style="animation: fadeUp 0.8s ease 0.3s both; background: #F4F4EC; border-radius: 24px; padding: 40px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 24px 64px rgba(0,0,0,0.35);">
       <h2 style="font-family: 'Sora', sans-serif; font-size: 26px; font-weight: 800; color: #22301F; margin: 0;">Stuur ons een bericht</h2>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px;">
         <input placeholder="Voornaam *" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
         <input placeholder="Achternaam *" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
       </div>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 14px;">
         <input placeholder="E-mail *" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
         <input placeholder="Telefoon" style="border: 1px solid rgba(63,87,65,0.25); border-radius: 12px; padding: 13px 16px; font-size: 15px; background: #FFFFFF; color: #22301F; outline: none;" style-focus="border-color: #A6C934;">
       </div>
@@ -85,8 +85,8 @@
   </div>
 
   <!-- Direct inplannen -->
-  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; padding: 72px 56px 0 56px;">
-    <div style="background: radial-gradient(ellipse 480px 300px at 90% 0%, rgba(255,255,255,0.35), transparent 60%), #C9E265; border-radius: 24px; padding: 40px 48px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; padding: clamp(40px, 6vw, 72px) clamp(20px, 4.4vw, 56px) 0 clamp(20px, 4.4vw, 56px);">
+    <div style="background: radial-gradient(ellipse 480px 300px at 90% 0%, rgba(255,255,255,0.35), transparent 60%), #C9E265; border-radius: 24px; padding: clamp(26px, 3.5vw, 40px) clamp(20px, 3.75vw, 48px); display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
       <div style="display: flex; flex-direction: column; gap: 8px; max-width: 640px;">
         <h2 style="font-family: 'Sora', sans-serif; font-size: 28px; font-weight: 800; color: #22301F; margin: 0;">Liever direct een moment prikken?</h2>
         <p style="font-size: 16px; line-height: 1.6; color: #44532B; margin: 0;">Plan zelf een online kennismaking van 30 minuten in de agenda — geen formulier, geen wachttijd.</p>
@@ -96,15 +96,15 @@
   </div>
 
   <!-- FAQ -->
-  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; padding: 72px 56px; display: flex; flex-direction: column; gap: 36px;">
+  <div style="background: radial-gradient(circle, rgba(63,87,65,0.14) 1px, transparent 1.5px) 0 0 / 26px 26px, #F4F4EC; padding: clamp(40px, 6vw, 72px) clamp(20px, 4.4vw, 56px); display: flex; flex-direction: column; gap: 36px;">
     <div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px; margin: 0 auto; text-align: center; align-items: center;">
       <span style="background: #E8F0C8; color: #4A6318; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px;">Veelgestelde vragen</span>
-      <h2 style="font-family: 'Sora', sans-serif; font-size: 40px; line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Snel antwoord op je vraag</h2>
+      <h2 style="font-family: 'Sora', sans-serif; font-size: clamp(28px, 4.6vw, 40px); line-height: 1.08; font-weight: 800; color: #22301F; margin: 0;">Snel antwoord op je vraag</h2>
     </div>
     <div style="display: flex; flex-direction: column; gap: 12px; max-width: 860px; width: 100%; margin: 0 auto;">
       <sc-for list="{{ faq }}" as="v" hint-placeholder-count="6">
         <div onClick="{{ v.toggle }}" style="background: #FFFFFF; border: 1px solid rgba(63,87,65,0.1); border-radius: 16px; padding: 22px 28px; display: flex; flex-direction: column; gap: 12px; cursor: pointer;" style-hover="border-color: rgba(63,87,65,0.3);">
-          <div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+          <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px;">
             <span style="font-family: 'Sora', sans-serif; font-weight: 700; font-size: 17px; color: #22301F;">{{ v.vraag }}</span>
             <span style="color: #7BA218; font-size: 20px; font-weight: 700; flex: 0 0 auto;">{{ v.teken }}</span>
           </div>

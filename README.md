@@ -1,28 +1,23 @@
-# BIM4ALL Academie — website (eerste concept)
+# BIM4ALL Academie — website-export
 
-Statische website voor de BIM4ALL Academie: leren & ontwikkelen, consulting en AI voor de bouwsector.
+Complete, werkende export van de BIM4ALL Academie-website (25 pagina's, responsive).
 
-## Structuur
-- `BIM4ALL Homepage v2.dc.html` — startpagina (open deze als index)
-- Overige `*.dc.html` — pagina's; `Nav.dc.html` en `Footer.dc.html` zijn gedeelde componenten
-- `Training.dc.html?t=<slug>` — detailpagina per klassikale training
-- `Artikel.dc.html?a=<slug>` — detailpagina per kennisartikel
-- `support.js` + `image-slot.js` — runtime (vereist)
-- `assets/` — beelden en logo's
+## Gebruik
+Statische site — geen build-stap nodig. Serveer de map via een webserver, bijv.:
 
-## Lokaal bekijken / hosten
-De site is volledig statisch. Serveer de map met een webserver (bestanden openen via `file://` werkt niet door de componentimports), bijvoorbeeld:
+    npx serve .
 
-```bash
-npx serve .
-# of
-python3 -m http.server 8000
-```
+Startpagina: `BIM4ALL Homepage v2.dc.html`. Direct openen vanaf schijf werkt niet overal (fetch van support.js vereist http).
 
-Open daarna `BIM4ALL Homepage v2.dc.html`.
+## Inhoud
+- `*.dc.html` — alle pagina's (Nav.dc.html en Footer.dc.html zijn gedeelde componenten, geladen door de pagina's)
+- `support.js` — runtime die de pagina's rendert (vereist)
+- `image-slot.js` — component voor foto-slots (vereist)
+- `logo.png`, `assets/` — beelden en logo's
 
-## Nog open (eerste concept)
-- Agenda-boekingslink op Contact ("Plan direct in de agenda")
-- Startdata trainingen en resultaatcijfers klantverhalen controleren
-- Formulieren zijn nog niet gekoppeld aan een backend/mailservice
-- Aanmelden trainingen verloopt straks via Plusport
+## Voor livegang (developer-checklist)
+- HTTPS afdwingen
+- Contactformulier: server-side afhandeling met spam- en injectiebescherming (nu prototype, verstuurt niets)
+- AVG: cookiemelding indien tracking, verwerking persoonsgegevens checken
+- Security headers (CSP, X-Frame-Options, etc.)
+- Nette URL's/redirects (bijv. `/leeraanbod` → `Leeraanbod.dc.html`)
